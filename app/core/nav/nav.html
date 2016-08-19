@@ -1,18 +1,40 @@
-<header class="header bgc-light-blue-600" ng-cloak>
-    <!-- Get the app info and put it in the navbar on the left -->
-    <h1 class="main-logo">
-        <a href="/" class="main-logo__link" lx-ripple="white">
-            <span class="main-nav--title">{{::nav.app.title}} </span>
-            <span class="main-nav--version">v{{::nav.app.version}}</span>
-        </a>
-    </h1>
-    <!-- Loop over the links and add them to the navbar on the right -->
-    <nav class="main-nav main-nav--lap-and-up">
-        <ul>
-            <li ng-repeat="n in nav.app.links">
-                <a href="{{::n.link}}" class="main-nav__link" lx-ripple="white">
-                    {{::n.text}}</a>
-            </li>
-        </ul>
-    </nav>
+<header class="dark" ng-cloak>
+    <div class="nav-container cbp-spmenu-left" id="ver-menu">
+        <div class="inner">
+            <a ng-href="#" class="logo">
+                <img ng-src="{{::nav.app.logo}}"/>
+            </a>
+
+            <ul class="main-menu">
+                <li class="multi-level-menu" ng-repeat="navigation in nav.app.links">
+                    <a ui-sref="{{::navigation.link}}"><i class="fa {{::navigation.icon}}"></i>{{::navigation.text}}</a>
+                    <ul class="sub-menu" ng-if="navigation.subs">
+                        <li ng-repeat="sub in navigation.subs">
+                            <a ui-sref="{{::sub.link}}"><i class="fa {{::sub.icon}}"></i>{{::sub.text}}</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="push-area">
+                <button id="showPushMenu"><i class="fa fa-bars"></i> </button>
+            </div>
+
+
+            <div id="mobile-menu" class="dl-menuwrapper">
+                <button class="dl-trigger"><i class="fa fa-bars"></i></button>
+                <ul class="dl-menu">
+                    <li ng-repeat="navigation in nav.app.links">
+                        <a ui-sref="{{::navigation.link}}">{{::navigation.text}}</a>
+                        <ul class="dl-submenu" ng-if="navigation.subs">
+                            <li ng-repeat="sub in navigation.subs">
+                                <a ui-sref="{{::sub.link}}">{{::sub.text}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./../../template/js/show-menu.js"></script>
 </header>

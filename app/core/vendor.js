@@ -1,15 +1,17 @@
-
 module.exports = function () {
 
     /* Styles */
     require('../index.scss');
-    require('../../node_modules/mdi/css/materialdesignicons.min.css');
-    require('../../node_modules/node-lumx/dist/scss/_lumx.scss');
+
     /* JS */
-    global.$ = global.jQuery = require('jquery');
-    require('velocity-animate');
+    global.$ = global.jQuery = require('../template/js/jquery-1.10.2.min');
+    // require('../template/js/jquery-ui');
+    require('sizzle');
     require('angular');
-    require('angular-route');
-    global.moment = require('moment');
-    require('node-lumx');
+    require('angular-ui-router');
+    require('ng-dialog');
+    require('../template/js/main.js');
+    global.classie = require('classie');
+    require('../template/js/waypoints.min');
+    require('../template/js/jquery.dlmenu');
 };

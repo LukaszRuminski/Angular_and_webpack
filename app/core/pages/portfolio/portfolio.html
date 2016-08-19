@@ -1,0 +1,26 @@
+<section class="h4-portfolio" ng-cloak>
+    <div class="port-filter fancy-select" >
+        <div class="avatar">
+            <img src="../../../template/placeholders/team/3.jpg">
+        </div>
+        <nav id="filters" class="link-group">
+            <a ng-repeat="project in portfolio.app.filters" class="{{::project.checked}}" data-filter="{{::project.value}}">{{::project.title}}</a>
+        </nav>
+    </div><!--end:port-filter-->
+        <div class="man-portfolio isotope-width grid">
+            <div class="item item-w{{::works.width}} item-h{{::works.height}} www_pages" ng-repeat="works in portfolio.app.works" >
+                <div class="p-item">
+                    <div class="pthumb">
+                        <div class="mask">
+                            <h3><a href="port-single.html">Desicription</a></h3>
+                            <a ng-href="" class="modalView" ng-controller="ViewModalCtrl" ng-click="openTemplate()"><i class="fa fa-search zoom"></i></a>
+                            <a href="port-single.html" class="info"><i class="fa fa-info-circle info"></i></a>
+                            <span class="glass"></span>
+                        </div>
+                        <img src="../../../template/placeholders/portfolio/square/5.jpg">
+                    </div><!--end:pthumb-->
+                </div><!--end:p-item-->
+            </div>
+        </div><!--end:man-portfolio-->
+</section><!--end:h4-portfolio-->
+<a href="#" class="back-to-top"> <i class="fa fa-angle-up"></i> </a>

@@ -1,6 +1,17 @@
 {
-  "esnext": true,
+  "esversion": 6,
   "node": true,
+  "asi": true,
+  "boss": false,
+  "eqeqeq": false,
+  "expr": true,
+  "immed": false,
+  "lastsemic": true,
+  "strict": false,
+  "-W058": false,
+  "shadow": true,
+  "eqnull": true,
+  "futurehostile": true,
   "globals": {
     "angular": true,
     "console": true

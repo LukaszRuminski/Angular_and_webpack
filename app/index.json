@@ -1,14 +1,93 @@
 {
   "title": "Module Loaders",
   "version": "0.3.0",
-  "links": [{
-    "text": "Webpack",
-    "link": "http://webpack.github.io"
-  }, {
-    "text": "Require.js",
-    "link": "http://requirejs.org/"
-  }, {
-    "text": "Jspm",
-    "link": "http://jspm.io/"
-  }]
+  "links": [
+    {
+      "text": "Home",
+      "link": "home",
+      "icon": "fa-home"
+    },
+    {
+      "text": "O mnie",
+      "link": "about",
+      "icon": "fa-user"
+    },
+    {
+      "text": "Oferta",
+      "link": "offer",
+      "icon": "fa-edit"
+    },
+    {
+      "text": "Realizacje",
+      "link": "portfolio",
+      "icon": "fa-camera"
+    }, {
+      "text": "Kontakt",
+      "link": "contact",
+      "icon": "fa-send"
+    }
+  ],
+  "filters": [
+    {
+      "title": "Wszystkie",
+      "value": "*",
+      "checked": "checked"
+    },{
+      "title": "Strony WWW",
+      "value": ".www_pages"
+    },{
+      "title": "Sklepy WWW",
+      "value": ".e_commerce"
+    },{
+      "title": "Grafiki",
+      "value": ".graphics"
+    },{
+      "title": "Bannery",
+      "value": ".banners"
+    }
+  ],
+  "works" : [
+    {
+      "links": "../template/placeholders/portfolio/square/5.jpg",
+      "height": 1
+    },
+    {
+      "links": "../template/placeholders/portfolio/square/1.jpg",
+      "width": 1
+
+    },
+    {
+      "links": "../template/placeholders/portfolio/square/2.jpg",
+      "width": 1
+    },
+    {
+      "links": "../template/placeholders/portfolio/square/2.jpg",
+      "width": 2,
+      "height": 2
+    },
+    {
+      "links": "../template/placeholders/portfolio/square/2.jpg",
+      "height": 1
+    },
+    {
+      "links": "../template/placeholders/portfolio/square/1.jpg",
+      "width": 1
+
+    },
+    {
+      "links": "../template/placeholders/portfolio/square/2.jpg",
+      "width": 1
+    },
+    {
+      "links": "../template/placeholders/portfolio/square/2.jpg",
+      "width": 2,
+      "height": 2
+    },
+    {
+      "links": "../template/placeholders/portfolio/square/2.jpg",
+      "height": 1
+    }
+
+
+  ]
 }
