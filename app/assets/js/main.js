@@ -1,4 +1,3 @@
-// jshint ignore: start
 // /* ==============================================
 // DROPDOWN TOP BAR
 // =============================================== */
@@ -175,40 +174,40 @@
 // PRETTYPHOTO
 // =============================================== */
 //
-// jQuery(document).ready(function ($) {
-//
-//     var lightboxArgs = {
-//         animation_speed: 'fast',
-//         overlay_gallery: true,
-//         autoplay_slideshow: false,
-//         slideshow: 5000,
-//         /* light_rounded / dark_rounded / light_square / dark_square / facebook */
-//         theme: 'pp_default',
-//         opacity: 0.8,
-//         show_title: false,
-//         social_tools: "",
-//         deeplinking: false,
-//         allow_resize: true,
-//         /* Resize the photos bigger than viewport. true/false */
-//         counter_separator_label: '/',
-//         /* The separator for the gallery counter 1 "of" 2 */
-//         default_width: 940,
-//         default_height: 529
-//     };
-//
-//     if (jQuery('a[href$=jpg], a[href$=JPG], a[href$=jpeg], a[href$=JPEG], a[href$=png], a[href$=gif], a[href$=bmp]:has(img), a[class^="prettyPhoto"]').length) {
-//         jQuery('a[href$=jpg], a[href$=JPG], a[href$=jpeg], a[href$=JPEG], a[href$=png], a[href$=gif], a[href$=bmp]:has(img), a[class^="prettyPhoto"]').prettyPhoto(lightboxArgs);
-//     }
-//     if (jQuery("a[rel^='prettyPhoto']").length) {
-//         jQuery("a[rel^='prettyPhoto']").prettyPhoto({
-//             animation_speed: 'normal',
-//             theme: 'pp_default',
-//             slideshow: 3000,
-//             autoplay_slideshow: false
-//         });
-//     }
-//
-// });
+jQuery(document).ready(function ($) {
+
+    var lightboxArgs = {
+        animation_speed: 'fast',
+        overlay_gallery: true,
+        autoplay_slideshow: false,
+        slideshow: 5000,
+        /* light_rounded / dark_rounded / light_square / dark_square / facebook */
+        theme: 'pp_default',
+        opacity: 0.8,
+        show_title: false,
+        social_tools: "",
+        deeplinking: false,
+        allow_resize: true,
+        /* Resize the photos bigger than viewport. true/false */
+        counter_separator_label: '/',
+        /* The separator for the gallery counter 1 "of" 2 */
+        default_width: 940,
+        default_height: 529
+    };
+
+    if (jQuery('a[href$=jpg], a[href$=JPG], a[href$=jpeg], a[href$=JPEG], a[href$=png], a[href$=gif], a[href$=bmp]:has(img), a[class^="prettyPhoto"]').length) {
+        jQuery('a[href$=jpg], a[href$=JPG], a[href$=jpeg], a[href$=JPEG], a[href$=png], a[href$=gif], a[href$=bmp]:has(img), a[class^="prettyPhoto"]').prettyPhoto(lightboxArgs);
+    }
+    if (jQuery("a[rel^='prettyPhoto']").length) {
+        jQuery("a[rel^='prettyPhoto']").prettyPhoto({
+            animation_speed: 'normal',
+            theme: 'pp_default',
+            slideshow: 3000,
+            autoplay_slideshow: false
+        });
+    }
+
+});
 //
 //
 // /* ==============================================

@@ -8,7 +8,7 @@ module.exports = () => {
     require('./../../../assets/css/responsive.css');
     return {
         controller: AboutController,
-        controllerAs: 'portfolio',
+        controllerAs: 'about',
         templateUrl: './core/pages/about/about.html'
     };
 };

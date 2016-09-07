@@ -52,14 +52,14 @@ module.exports = {
             {
                 test: /node_modules\/classie/,
                 loader: 'imports?define=>undefined'
-            },
+            }
         ]
     },
     resolve: {
         root: APP,
         alias: {
             jquery: "jquery/src/jquery"
-        },
+        }
     },
     node: {
             child_process: 'empty'
@@ -68,7 +68,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.DefinePlugin({
             MODE: {
-                production: process.env.NODE_ENV === 'production'
+                production: process.env.NODE_ENV === 'dev'
             }
         }),
         new ExtractTextPlugin("style.css", {
@@ -90,7 +90,6 @@ module.exports = {
     ],
     devServer: {
         inline:true,
-        port: 7070,
-        compress: true
-    },
+        port: 7070
+    }
 };

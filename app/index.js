@@ -10,5 +10,6 @@ module.exports = angular.module('app', [
     require('./core/common/fancyselect').name,
     require('./core/common/isotopes').name,
     require('./core/common/isotope-width').name,
-    require('./core/common/prettyPhotos').name
+    require('./core/common/prettyPhotos').name,
+    require('./core/common/scrollRevel').name
 ])

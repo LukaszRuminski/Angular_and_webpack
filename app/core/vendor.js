@@ -12,6 +12,7 @@ module.exports = function () {
     require('ng-dialog');
     require('../assets/js/main.js');
     global.classie = require('classie');
+    global.scrollReveal = require('../assets/js/scrollReveal');
     require('../assets/js/waypoints.min');
     require('../assets/js/jquery.dlmenu');
 };
