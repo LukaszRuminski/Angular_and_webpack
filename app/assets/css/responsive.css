@@ -20,8 +20,12 @@
 	}	
 	}
 @media only screen and (max-width: 980px) {
+	header{
+		min-height: 67px;
+	}
 	.dl-menuwrapper{
 		display:block;
+		position:absolute;
 		position:absolute;
 		top:0;
 		right:0;
@@ -64,6 +68,8 @@
 	}
 	.wrapper {
 		overflow:hidden;
+		background-color: #1a191d;
+
 	}
 	
 	.topbar .container .t-left {
@@ -128,12 +134,12 @@
 	.iso-pro-list.threecol .item {
 		width:49.9%;
 	}
-	.home-4 .port-filter {
+	.grubson-design .port-filter {
 		width:100%;
 		position:relative;
-		padding-top:80px;
+		padding-top:15px;
 		}
-	.home-4 .h4-portfolio {
+	.grubson-design .h4-portfolio {
 		padding:0;
 		}
 	}

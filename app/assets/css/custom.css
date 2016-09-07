@@ -289,17 +289,17 @@
 		margin-bottom:50px;}			
 
 /*===========
- HOME-4
+ grubson-design
 =============*/
-.home-4 ,
-.home-4 .main-container {
-	background:#1a191d;
+.grubson-design ,
+.grubson-design .main-container {
+	background:#ffffff;
 	}
-.home-4 .h4-portfolio {
+.grubson-design .h4-portfolio {
 	position:relative;
 	padding-left:180px;
 	}	
-.home-4 .port-filter {
+.grubson-design .port-filter {
 	width:180px;
 	position:absolute;
 	top:0;
@@ -307,7 +307,7 @@
 	box-sizing:border-box;
 	padding:20px;
 	}
-.home-4 .port-filter nav#filters a {
+.grubson-design .port-filter nav#filters a {
 	width:100%;
 	display:block;
 	padding:10px 15px ;
@@ -316,12 +316,12 @@
 	border:none;
 	border-radius:0;
 	}
-.home-4 .port-filter nav a:hover,
-.home-4 .port-filter nav a.checked {
+.grubson-design .port-filter nav a:hover,
+.grubson-design .port-filter nav a.checked {
 	box-shadow:none;
 	background:rgba(255, 255, 255,.1)
 	}
-.home-4 .port-filter .avatar {
+.grubson-design .port-filter .avatar {
 	width:80px;
 	height:80px;
 	margin:20px auto;

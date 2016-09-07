@@ -9,6 +9,7 @@ var CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
     context: APP,
+    devtool: 'source-map',
     entry: {
         app: ['webpack/hot/dev-server', './core/bootstrap.js']
     },
@@ -73,18 +74,23 @@ module.exports = {
         new ExtractTextPlugin("style.css", {
             allChunks: true
         }),
-        new ModernizrWebpackPlugin(),
-        // new webpack.optimize.UglifyJsPlugin()
-    //     new CompressionPlugin({
-    //         asset: "[path].gz[query]",
-    //         algorithm: "gzip",
-    //         test: /\.js$|\.css$|\.html$/,
-    //         threshold: 10240,
-    //         minRatio: 0.5
-    //     })
+        new ModernizrWebpackPlugin()
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: {
+        //         warnings: false
+        //     }
+        // }),
+        // new CompressionPlugin({
+        //     asset: "[path].gz[query]",
+        //     algorithm: "deflate",
+        //     test: /\.js$|\.css$|\.html$/,
+        //     threshold: 0,
+        //     minRatio: 0.5
+        // })
     ],
     devServer: {
         inline:true,
-        port: 7070
+        port: 7070,
+        compress: true
     },
 };

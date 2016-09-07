@@ -1,14 +1,14 @@
 <section class="h4-portfolio" ng-cloak>
     <div class="port-filter fancy-select" >
         <div class="avatar">
-            <img src="../../../template/placeholders/team/3.jpg">
+            <img src="../../../assets/placeholders/team/3.jpg">
         </div>
         <nav id="filters" class="link-group">
             <a ng-repeat="project in portfolio.app.filters" class="{{::project.checked}}" data-filter="{{::project.value}}">{{::project.title}}</a>
         </nav>
     </div><!--end:port-filter-->
         <div class="man-portfolio isotope-width grid">
-            <div class="item item-w{{::works.width}} item-h{{::works.height}} www_pages" ng-repeat="works in portfolio.app.works" >
+            <div class="item item-w{{::works.width}} item-h{{::works.height}} {{::works.type}}" ng-repeat="works in portfolio.app.works" >
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mask">
@@ -17,7 +17,7 @@
                             <a href="port-single.html" class="info"><i class="fa fa-info-circle info"></i></a>
                             <span class="glass"></span>
                         </div>
-                        <img src="../../../template/placeholders/portfolio/square/5.jpg">
+                        <img src="../../../assets/placeholders/portfolio/square/5.jpg">
                     </div><!--end:pthumb-->
                 </div><!--end:p-item-->
             </div>

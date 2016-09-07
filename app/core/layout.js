@@ -13,11 +13,11 @@ module.exports =  angular.module('app.layout', ['ui.router', 'ngDialog'])
         $stateProvider
             .state('home', {
                 url: "/home",
-                templateUrl: "../core/pages/home.html"
+                templateUrl: "../core/pages/home/home.html"
             })
             .state('about', {
                 url: "/about",
-                templateUrl: "../core/pages/about.html"
+                templateUrl: "../core/pages/about/about.html"
             })
             .state('portfolio', {
                 url: "/portfolio",
@@ -40,5 +40,7 @@ module.exports =  angular.module('app.layout', ['ui.router', 'ngDialog'])
 .directive('progressBar', require('./progress/progress'))
     .directive('navigation', require('./nav/nav'))
     .directive('content', require('./content/content'))
+    .directive('home', require('./pages/home/home'))
+    .directive('about', require('./pages/about/about'))
     .directive('portfolio', require('./pages/portfolio/portfolio'));
 // .directive('modalView', require('./common/prettyPhotos'));

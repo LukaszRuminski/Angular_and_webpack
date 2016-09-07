@@ -49,43 +49,52 @@
   "works" : [
     {
       "links": "../template/placeholders/portfolio/square/5.jpg",
-      "height": 1
+      "height": 1,
+      "type" : "www_pages"
     },
     {
       "links": "../template/placeholders/portfolio/square/1.jpg",
-      "width": 1
+      "width": 1,
+      "type" : "www_pages"
 
     },
     {
       "links": "../template/placeholders/portfolio/square/2.jpg",
-      "width": 1
+      "width": 1,
+      "type" : "e_commerce"
     },
     {
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 2,
-      "height": 2
+      "height": 2,
+      "type" : "e_commerce"
     },
     {
       "links": "../template/placeholders/portfolio/square/2.jpg",
-      "height": 1
+      "height": 1,
+      "type" : "graphics"
     },
     {
       "links": "../template/placeholders/portfolio/square/1.jpg",
-      "width": 1
+      "width": 1,
+      "type" : "graphics"
 
     },
     {
       "links": "../template/placeholders/portfolio/square/2.jpg",
-      "width": 1
+      "width": 1,
+      "type" : "graphics"
     },
     {
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 2,
-      "height": 2
+      "height": 2,
+      "type" : "banners"
     },
     {
       "links": "../template/placeholders/portfolio/square/2.jpg",
-      "height": 1
+      "height": 1,
+      "type" : "banners"
     }
 
 

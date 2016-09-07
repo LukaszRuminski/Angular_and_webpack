@@ -5,10 +5,9 @@ export class PortfolioController {
 }
 module.exports = () => {
     require('./portfolio.scss');
-    require('./../../../template/css/responsive.css');
-    require('./../../../template/js/fancySelect');
-    require('./../../../template/js/isotope.pkgd.min');
-    null
+    require('./../../../assets/css/responsive.css');
+    require('./../../../assets/js/fancySelect');
+    require('./../../../assets/js/isotope.pkgd.min');
     return {
         controller: PortfolioController,
         controllerAs: 'portfolio',

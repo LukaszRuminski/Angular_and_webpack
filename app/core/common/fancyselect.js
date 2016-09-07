@@ -4,9 +4,14 @@ module.exports = angular.module('app.fancySelect', [])
 
     return{
         restrict: 'C',
-        link: function ($scope, $element) {
+        link: function ($scope) {
             $scope.$on('$viewContentLoaded', function() {
                 angular.element('#filters').fancySelect();
+                // $timeout(function () {
+                //     var heightValue = $element.height();
+                //     $element.css('height', heightValue);
+                //     console.log($element.height());
+                // })
             })
         }
     };
