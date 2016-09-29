@@ -209,10 +209,10 @@ html[xmlns] .slides {
 	border-radius:50%;
 	}
 .flex-control-paging li a:hover {
-	background: #8d84e4;
+	background: #8D84E4;
 }
 .flex-control-paging li a.flex-active {
-	background: #8d84e4;
+	background: #8D84E4;
 	cursor: default;
 }
 .flex-control-thumbs {

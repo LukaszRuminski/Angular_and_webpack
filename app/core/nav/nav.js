@@ -1,11 +1,7 @@
-export class NavCtrl {
-    constructor() {
+function NavCtrl (){
         this.app = require('index.json');
-
-    }
-
 }
-module.exports = () => {
+module.exports = function() {
     require('./nav.scss');
     // require('./show-menu')
     return {

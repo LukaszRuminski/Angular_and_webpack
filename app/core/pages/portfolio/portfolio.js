@@ -1,9 +1,7 @@
-export class PortfolioController {
-    constructor() {
+function PortfolioController () {
         this.app = require('index.json');
-    }
 }
-module.exports = () => {
+module.exports = function(){
     require('./portfolio.scss');
     require('./../../../assets/css/responsive.css');
     require('./../../../assets/js/fancySelect');
@@ -13,5 +11,5 @@ module.exports = () => {
         controllerAs: 'portfolio',
         templateUrl: './core/pages/portfolio/portfolio.html'
     };
-};
+}
 

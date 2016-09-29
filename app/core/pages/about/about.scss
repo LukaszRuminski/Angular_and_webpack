@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@import "../../../assets/css/buttons.css";
+
+/* CSS Document */
+/*===== Section =====*/
+
+/* Section */
+
+.photo {
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  height: 450px;
+  position: relative;
+}
+
+.h1-slide {
+  background: url("../../../assets/images/backgrounds/banner.svg") no-repeat scroll center bottom, linear-gradient(-45deg, #673c8e, #236295, #9869ff) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background-size: cover;
+  /*if ie9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#673c8e', endColorstr='#9869ff',GradientType=1 );
+  /* IE6-8 fallback on horizontal gradient */
+}
+
+.sec-element-typo {
+  width: 100%;
+  background: url(../../../assets/images/backgrounds/dark-tl.svg) top left no-repeat, url(../../../assets/images/backgrounds/dark-br.svg) bottom right no-repeat, url(../../../assets/images/backgrounds/noise.png) repeat;
+  margin: 0;
+}
+
+.sec-element-inter {
+  border: 1px solid #e4e4e4;
+  padding: 50px 0 0;
+  margin: 0;
+  .background {
+    background: #fff url(../../../assets/placeholders/backgrounds/bg-3.jpg) no-repeat bottom center;
+    height: 1200px;
+  }
+  .text-heading {
+    margin: 10px 0 70px;
+  }
+}
+
+.sec-element-media {
+  padding: 60px 0;
+  background: url(../../../assets/placeholders/backgrounds/bg-4.png) no-repeat top center;
+}
+
+.one-section-mask-1, .mask-color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../../../assets/images/backgrounds/mask-1.png);
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.page-section-1 {
+  background: #000 url(../../../assets/placeholders/portfolio/photo/15a.jpg) 0 no-repeat fixed;
+  height: 1200px;
+}
+
+.page-section-2 {
+  background: #000 url(../../../assets/placeholders/backgrounds/bg-5.jpg) 0 no-repeat fixed;
+  height: 1200px;
+}
+
+.page-section-work {
+  background: #1c222f url(../../../assets/placeholders/backgrounds/desktop.jpg) -50% 0 no-repeat fixed;
+  height: 1400px;
+}
+
+.sec-recent-work1 {
+  padding: 30px 0;
+  background: #252525 url(../../../assets/placeholders/backgrounds/recent-work.png);
+  .portfolio {
+    margin: 30px 0;
+  }
+}
+/*
+.designer {
+    background: url(../../../assets/placeholders/backgrounds/designer.png) top right no-repeat fixed;
+}*/
+
+#hello {
+  padding: 50px 0;
+}
+
+.sec-mobile-ready {
+  padding-top: 100px;
+  .text-block {
+    color: #fff;
+    top: 100px;
+  }
+  .iphone-ipad {
+    height: 500px;
+    img {
+      bottom: 0;
+      position: absolute;
+      &:last-child {
+        left: 45%;
+      }
+    }
+  }
+}
+
+#h1-team {
+  padding: 100px 0;
+}
+
+/* about-intro */
+
+.about-intro, .abouts-hero {
+  width: 100%;
+  display: block;
+  min-height: 800px;
+  position: relative;
+}
+
+.about-intro {
+  .hero-bg {
+    background: url("../../../assets/placeholders/backgrounds/bg-5.jpg") no-repeat fixed 0 center #000000;
+    height: 1600px;
+  }
+  .intro {
+    color: #FFF;
+    max-width: 800px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    color: #CCC;
+    line-height: 30px;
+    p.name {
+      font-weight: 900;
+      font-size: 50px;
+      margin-bottom: 40px;
+      color: #fff;
+    }
+    ul {
+      width: 100%;
+      display: block;
+      text-align: center;
+      li {
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+      margin-bottom: 30px;
+    }
+  }
+  p.scroll-down {
+    font-size: 12px;
+    bottom: 20px;
+    left: 50%;
+    position: absolute;
+    width: 100px;
+    margin: 0 0 0 -50px;
+    text-align: center;
+    font-size: 30px;
+    span {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+}
+
+.about-info {
+  width: 100%;
+  display: block;
+  padding: 20px 0;
+  background: #f9f9f9;
+  border-bottom: 5px solid #f4f4f4;
+  .container > div {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 80%;
+      top: 10%;
+      left: 0;
+      background: #e8e8e8;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.about-me-statics {
+  width: 100%;
+  display: block;
+  padding: 30px 0;
+  margin: 30px auto 50px;
+  border-bottom: 5px solid #F4F4F4;
+  border-top: 5px solid #F4F4F4;
+  background: url(../../../assets/placeholders/backgrounds/photography.png);
+}
+
+
+/*===========
+ grubson-design
+=============*/
+
+.grubson-design {
+  background: #ffffff;
+  .main-container {
+    background: #ffffff;
+  }
+}

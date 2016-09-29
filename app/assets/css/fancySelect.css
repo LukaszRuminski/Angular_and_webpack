@@ -48,7 +48,7 @@ div.fancy-select div.trigger:after {
 div.fancy-select div.trigger.open {
 	background: #FFF;
 	border: 1px solid #e4e4e4;
-	color: #8d84e4;
+	color: #8D84E4;
 	box-shadow: none;
 }
 
@@ -131,5 +131,5 @@ div.fancy-select ul.options li {
 div.fancy-select ul.options li.selected,
 div.fancy-select ul.options li.hover {
 	background: rgba(0,0,0,0.02);
-	color: #8d84e4;
+	color: #8D84E4;
 }

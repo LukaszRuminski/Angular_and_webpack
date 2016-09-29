@@ -1,9 +1,7 @@
-export class HomeController {
-    constructor() {
+function HomeController (){
         this.app = require('index.json');
-    }
 }
-module.exports = () => {
+module.exports = function () {
     require('./home.scss');
     require('./../../../assets/css/responsive.css');
     require('./../../../assets/js/scrollReveal.js');

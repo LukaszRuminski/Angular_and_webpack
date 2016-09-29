@@ -1,9 +1,7 @@
-class ProgressBarCtrl {
-    constructor() {
+function ProgressBarCtrl () {
         this.app = require('index.json');
-    }
 }
-module.exports = () => {
+module.exports = function() {
     require('./progress.scss');
     return {
         controller: ProgressBarCtrl,

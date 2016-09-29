@@ -289,11 +289,11 @@ jQuery(document).ready(function ($) {
 // PROGRESS BAR
 // =============================================== */
 //
-// $(window).ready(function (e) {
-//     $.each($('div.progress-bar'), function () {
-//         $(this).css('width', $(this).attr('aria-valuetransitiongoal') + '%');
-//     });
-// });
+$(window).ready(function (e) {
+    jQuery.each(jQuery('div.progress-bar'), function () {
+        jQuery(this).css('width', jQuery(this).attr('aria-valuetransitiongoal') + '%');
+    });
+});
 //
 // /* =========================================================
 // PARALLAX

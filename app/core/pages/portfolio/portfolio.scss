@@ -1,1 +1,47 @@
-
+.grubson-design.portfolio{
+  @extend .grubson-design;
+  background: #1a191d;
+  .main-container {
+    @extend .main-container;
+    background: #1a191d;
+  }
+  .h4-portfolio {
+    background: #1a191d;
+    height: auto;
+    position: relative;
+    padding-left: 180px;
+  }
+  .port-filter {
+    width: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    nav {
+      &#filters a {
+        width: 100%;
+        display: block;
+        padding: 10px 15px;
+        font-weight: 400;
+        text-align: left;
+        border: none;
+        border-radius: 0;
+      }
+      a {
+        &:hover, &.checked {
+          box-shadow: none;
+          background: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+    .avatar {
+      width: 80px;
+      height: 80px;
+      margin: 20px auto;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+}

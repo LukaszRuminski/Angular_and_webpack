@@ -1,9 +1,7 @@
-export class ContentCtrl {
-    constructor() {
-        this.app = require('index.json');
-    }
+function ContentCtrl () {
+    this.app = require('index.json');
 }
-module.exports = () => {
+module.exports = function() {
     require('./content.scss');
     return {
         controller: ContentCtrl,

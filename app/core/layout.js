@@ -1,11 +1,12 @@
 module.exports =  angular.module('app.layout', ['ui.router', 'ngDialog'])
     .run(['$rootScope', '$state', '$stateParams', '$timeout',  function ($rootScope,   $state,   $stateParams, $timeout) {
-                $rootScope.$state = $state;
-                $rootScope.$stateParams = $stateParams;
-                $rootScope.$timeout = $timeout;
-            }
-        ]
-    )
+        $rootScope.$state = $state;
+        $rootScope.$stateParams = $stateParams;
+        $rootScope.$timeout = $timeout;
+        $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+            $rootScope.containerClass = toState.containerClass;
+        });
+    }])
     .config(['$stateProvider', '$urlRouterProvider' , function($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise("/home");
         //
@@ -13,14 +14,17 @@ module.exports =  angular.module('app.layout', ['ui.router', 'ngDialog'])
         $stateProvider
             .state('home', {
                 url: "/home",
+                containerClass: "home",
                 templateUrl: "../core/pages/home/home.html"
             })
             .state('about', {
                 url: "/about",
+                containerClass: "about",
                 templateUrl: "../core/pages/about/about.html"
             })
             .state('portfolio', {
                 url: "/portfolio",
+                containerClass: "portfolio",
                 templateUrl: "../core/pages/portfolio/portfolio.html"
             });
     }])

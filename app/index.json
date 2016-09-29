@@ -1,6 +1,19 @@
 {
   "title": "Module Loaders",
   "version": "0.3.0",
+  "assets": {
+    "static_images": {
+      "gd_menu_logo": "assets/placeholders/GD_logo_menu.png",
+      "gd_home_logo": "assets/placeholders/GD_logo_100x100.png",
+      "mac_pc_home" : "assets/placeholders/img/macbook-1.jpg"
+    }
+  },
+  "texts":{
+    "home":{
+      "top_heading": "Witam w GrubsonDesign",
+      "top_sentence": "W miejscu gdzie Państwa marzenia o zaprezentowaniu siebie lub własnej firmy w internecia nabiorą nowych wymiarów"
+    }
+  },
   "links": [
     {
       "text": "Home",

@@ -53,7 +53,7 @@ header .main-menu > li > a {
 	top: 50px;
 	left: 10px;
 	content: '';
-	background:#8d84e4;
+	background:#5ea7f0;
 	height:2px;
 	width:0px;
 	margin-left:10px;
@@ -65,18 +65,18 @@ header .main-menu > li > a {
 }
 .main-menu li a:hover::before,
 .main-menu li.active a::before {
-	color: #8d84e4;
+	color: #5ea7f0;
 	width:20px;
 	
 }
 .main-menu li a:hover > i,
 .main-menu li.active > i {
-	color: #8d84e4;
+	color: #5ea7f0;
 }
 .main-menu li a:hover,
 .main-menu li a:focus,
 .main-menu li.active>a {
-	color: #8d84e4;
+	color: #5ea7f0;
 	text-decoration: none!important;
 }
 .main-menu li ul a, .main-menu li ul p {
@@ -99,7 +99,7 @@ header .main-menu > li > a {
 	padding: 0\9;
 	border-left:1px solid #ECECEC;
 	border-right:1px solid #ECECEC;
-	border-bottom: 1px solid #8d84e4;
+	border-bottom: 1px solid #5ea7f0;
 	visibility: hidden;
 	visibility: hidden\9;
 	opacity:0;
@@ -134,7 +134,7 @@ header .main-menu > li > a {
 	right: 5px;
 }
 .main-menu li.multi-level-menu .sub-menu li:hover .arrow {
-	border-left-color: #8d84e4;
+	border-left-color: #5ea7f0;
 }
 
 /* Side menu */
@@ -178,7 +178,7 @@ header .main-menu > li > a {
 	content:'';
 	height:1px;
 	width:0;
-	background:#8d84e4;
+	background:#5ea7f0;
 	}
 .main-menu li.multi-level-menu .sub-menu li a:hover:before,
 .main-menu li.mega-menu .inner div ul.menu li a:hover:before {
@@ -195,7 +195,7 @@ header .main-menu > li > a {
 	position: absolute;
 	width: 200px;
 	background-color: #f9f9f9;
-	border-bottom: 1px solid #8d84e4;
+	border-bottom: 1px solid #5ea7f0;
 	visibility: hidden;
 	visibility: visible\9;
 	display: none\9;
@@ -259,7 +259,7 @@ header .main-menu > li > a {
 .main-menu li.mega-menu .inner > div h3:after {
 	position:absolute;
 	content:'';
-	background:#8d84e4;
+	background:#5ea7f0;
 	width:40px;
 	height:1px;
 	left:0;
@@ -446,7 +446,7 @@ input::-webkit-input-placeholder {
 	outline: none;
 }
 .dl-menuwrapper li a:hover {
-	color:#8d84e4;
+	color:#5ea7f0;
 	text-decoration: none;
 	}
 .dl-menuwrapper li i {
@@ -1437,7 +1437,7 @@ All this is done for any sub-level being entered.
 		right:0;
 		height:100%;
 		background-color:#f0f0f0;
-		background-image:url(../placeholders/bg-push.png);
+		background-image:url(../placeholders/gd_push.png);
 		background-position:bottom center;
 		background-repeat:no-repeat;
 		text-align:center;
@@ -1461,7 +1461,7 @@ All this is done for any sub-level being entered.
 		}
 	.push-area button:hover i,
 	header.dark .push-area button:hover i {
-		color:#8d84e4;
+		color:#5ea7f0;
 		}
 	header.dark .push-area {
 		background-color:#1e1e21;
