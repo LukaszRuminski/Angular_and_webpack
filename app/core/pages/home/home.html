@@ -4,44 +4,19 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <center><img ng-src="./{{::home.app.assets.static_images.gd_home_logo}}"  class="scroll-show"></center>
                 <div class="text-heading large-head" data-scroll-reveal="enter bottom over 1s and move 50px" >
-                    <h1 >{{home.app.texts.home.top_heading}}</h1>
-                    <span>{{home.app.texts.home.top_sentence}}</span>
+                    <h1 >{{::home.app.texts.home.top_heading}}</h1>
+                    <span>{{::Whome.app.texts.home.top_sentence}}</span>
                 </div><!--end:text-heading-->
                 <center><img ng-src="./{{::home.app.assets.static_images.mac_pc_home}}" data-scroll-reveal="enter top over 1s and move 100px" ></center>
             </div><!--end:row-->
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" ng-repeat="assets in home.app.texts.home.assets">
                 <div class="services-box single-icon" data-scroll-reveal="enter bottom over .3s and move 100px">
                     <div class="icon-box">
-                        <i class="fa fa-mobile"></i>
+                        <i class="fa {{::assets.icon}}"></i>
                     </div>
-                    <div class="sb-content-wrap">
-                        <h3>Responsive & retina display</h3>
-                        <p>ONE is still the same beautiful theme on your every possible viewport. You can rest assured that every pixel will respond as perfectly it should no matter if your devices are.</p>
-                    </div>
-                </div>
-            </div><!--end:col -->
-
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="services-box single-icon" data-scroll-reveal="enter bottom over .6s and move 100px">
-                    <div class="icon-box">
-                        <i class="fa fa-gear"></i>
-                    </div>
-                    <div class="sb-content-wrap">
-                        <h3>For multi high-end purposes </h3>
-                        <p>ONE is roundup of all-beautiful and all-necessary features hand crafted with lots of care and precision. We ensure this is the only ONE theme you will need to meet any of your objectives. </p>
-                    </div>
-                </div>
-            </div><!--end:col -->
-
-
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="services-box single-icon" data-scroll-reveal="enter bottom over .9s and move 100px">
-                    <div class="icon-box">
-                        <i class="fa fa-flash"></i>
-                    </div>
-                    <div class="sb-content-wrap">
-                        <h3>Vast ranges of possibilities </h3>
-                        <p>All the combinations you can create by the short code, header and sections along with tons of associated page templates have turns ONE into a suit that fit perfectly your demand.</p>
+                    <div class="sb-content-wrap" >
+                        <h3>{{::assets.title}}</h3>
+                        <p>{{::assets.text}}</p>
                     </div>
                 </div>
             </div><!--end:col -->

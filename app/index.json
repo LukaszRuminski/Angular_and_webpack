@@ -5,13 +5,118 @@
     "static_images": {
       "gd_menu_logo": "assets/placeholders/GD_logo_menu.png",
       "gd_home_logo": "assets/placeholders/GD_logo_100x100.png",
-      "mac_pc_home" : "assets/placeholders/img/macbook-1.jpg"
+      "mac_pc_home": "assets/placeholders/img/macbook-1.jpg"
     }
   },
-  "texts":{
-    "home":{
+  "texts": {
+    "home": {
       "top_heading": "Witam w GrubsonDesign",
-      "top_sentence": "W miejscu gdzie Państwa marzenia o zaprezentowaniu siebie lub własnej firmy w internecia nabiorą nowych wymiarów"
+      "top_sentence": "W miejscu gdzie Państwa marzenia o zaprezentowaniu siebie lub własnej firmy w internecia nabiorą nowych wymiarów",
+      "assets": [
+        {
+          "title": "Responsive Design i Development",
+          "text": "Tworzymy projekty multi-platformowe i respnsywne dzięki nam zaprezentujesz sie na każdej platformie",
+          "icon": "fa-mobile"
+        },
+        {
+          "title": "asset 2 title",
+          "text": "asset 2 text",
+          "icon": "fa-gear"
+        },
+        {
+          "title": "asset 3 title",
+          "text": "asset 3 text",
+          "icon": "fa-flash"
+        }
+      ]
+    },
+    "about": {
+      "top_heading": "Witam nazywam sie Łukasz",
+      "top_sentence": [
+        {
+          "bullet": "Od 2007"
+        },
+        {
+          "bullet": "bla bla bla 2"
+        },
+        {
+          "bullet": "bla bla bla 3"
+        },
+        {
+          "bullet": "bla bla bla 4"
+        }
+      ],
+      "info_about": {
+        "birthdate": ".Data urodzenia",
+        "birthdate_value": "17-05-1986",
+        "works_as": ".Stanowisko",
+        "works_as_value": "Frontend developer w HRS",
+        "phone_number": ".Numer Telefonu",
+        "phone_number_value": "+48 790 029 836",
+        "email": ".Email",
+        "email_value": "l.ruminski@grubson-design.com.pl"
+      },
+      "about_me": {
+        "my_history_title": "Moja Historia",
+        "my_history_text" : [
+          {
+            "paragraph":"info infon"
+          },
+          {
+            "paragraph":"info infon 1"
+          },
+          {
+            "paragraph":"info infon 2"
+          }
+        ],
+        "skills_title": "Umiejętności",
+        "skills": [
+          {
+            "name": "dupa",
+            "rank": "20"
+          },
+          {
+            "name": "dupa1",
+            "rank": "50"
+          },
+          {
+            "name": "dupa2",
+            "rank": "90"
+          },
+          {
+            "name": "dupa3",
+            "rank": "99"
+          },
+          {
+            "name": "dupa4",
+            "rank": "70"
+          }
+        ],
+        "statics": "Osiągnięcia",
+        "items": [
+          {
+            "number": "01",
+            "text": "dupa1",
+            "icon": "fa-graduation-cap"
+          },
+          {
+            "number": "20002",
+            "text": "dupa2",
+            "icon": "fa-clock-o"
+          },
+          {
+            "number": "3000",
+            "text": "dupa3",
+            "icon": "fa-suitcase"
+          },
+          {
+            "number": "12",
+            "text": "dupa4",
+            "icon": "fa-comments"
+          }
+        ]
+
+      }
     }
   },
   "links": [
@@ -34,7 +139,8 @@
       "text": "Realizacje",
       "link": "portfolio",
       "icon": "fa-camera"
-    }, {
+    },
+    {
       "text": "Kontakt",
       "link": "contact",
       "icon": "fa-send"
@@ -45,71 +151,71 @@
       "title": "Wszystkie",
       "value": "*",
       "checked": "checked"
-    },{
+    },
+    {
       "title": "Strony WWW",
       "value": ".www_pages"
-    },{
+    },
+    {
       "title": "Sklepy WWW",
       "value": ".e_commerce"
-    },{
+    },
+    {
       "title": "Grafiki",
       "value": ".graphics"
-    },{
+    },
+    {
       "title": "Bannery",
       "value": ".banners"
     }
   ],
-  "works" : [
+  "works": [
     {
       "links": "../template/placeholders/portfolio/square/5.jpg",
       "height": 1,
-      "type" : "www_pages"
+      "type": "www_pages"
     },
     {
       "links": "../template/placeholders/portfolio/square/1.jpg",
       "width": 1,
-      "type" : "www_pages"
-
+      "type": "www_pages"
     },
     {
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 1,
-      "type" : "e_commerce"
+      "type": "e_commerce"
     },
     {
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 2,
       "height": 2,
-      "type" : "e_commerce"
+      "type": "e_commerce"
     },
     {
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "height": 1,
-      "type" : "graphics"
+      "type": "graphics"
     },
     {
       "links": "../template/placeholders/portfolio/square/1.jpg",
       "width": 1,
-      "type" : "graphics"
-
+      "type": "graphics"
     },
     {
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 1,
-      "type" : "graphics"
+      "type": "graphics"
     },
     {
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 2,
       "height": 2,
-      "type" : "banners"
+      "type": "banners"
     },
     {
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "height": 1,
-      "type" : "banners"
+      "type": "banners"
     }
-
-
   ]
 }

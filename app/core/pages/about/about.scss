@@ -1,5 +1,7 @@
 @charset "UTF-8";
-@import "../../../assets/css/buttons.css";
+@import "../../../assets/css/buttons.scss";
+@import "../../../core/common/mixins";
+
 
 /* CSS Document */
 /*===== Section =====*/
@@ -125,7 +127,7 @@
   }
   .intro {
     color: #FFF;
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
     position: absolute;
     text-align: center;
@@ -208,6 +210,99 @@
   border-top: 5px solid #F4F4F4;
   background: url(../../../assets/placeholders/backgrounds/photography.png);
 }
+/*
+Progress-Bar
+*/
+.mini-progress {
+  p.name {
+    margin-bottom: 5px;
+  }
+  .progress {
+    box-shadow: none;
+    height: 6px;
+    overflow: inherit;
+    margin-bottom: 10px;
+    @include color-divs(5,'skill', #3d80f0);
+    .progress-bar {
+      box-shadow: none;
+      border-radius: 3px;
+      position: relative;
+      span.value {
+        position: absolute;
+        top: -25px;
+        color: #7d7d7d;
+        right: 0;
+        -webkit-animation: pValue 3s ease-in-out;
+        -moz-animation: pValue 3s ease-in-out;
+        animation: pValue 3s ease-in-out;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.progress .progress-bar {
+  &.animated-ease-in-out, span.value {
+    -webkit-transition: width 3s ease-in-out;
+    -moz-transition: width 3s ease-in-out;
+    -ms-transition: width 3s ease-in-out;
+    -o-transition: width 3s ease-in-out;
+    transition: width 3s ease-in-out;
+  }
+}
+
+@keyframes pValue {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@-webkit-keyframes pValue {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.mini-progress.left-info {
+  position: relative;
+  .progress, p.name {
+    margin-left: 70px;
+  }
+  .progress {
+    position: inherit;
+    margin-bottom: 30px;
+  }
+  p.name {
+    font-weight: 400;
+  }
+  .progress-bar span.value {
+    font-size: 30px;
+    position: absolute;
+    right: auto;
+    top: -15px;
+    left: -70px !important;
+    opacity: 1 !important;
+    font-weight: 100;
+  }
+}
 
 
 /*===========
@@ -220,3 +315,5 @@
     background: #ffffff;
   }
 }
+
+

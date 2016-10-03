@@ -8,7 +8,7 @@ if (MODE.production) { // jshint ignore:line
     require('./config/production')(appModule);
 }
 
-angular.element(document).ready(() => {
+angular.element(document).ready(function(){
     angular.bootstrap(document, [appModule.name], {
             //strictDi: true
         }
