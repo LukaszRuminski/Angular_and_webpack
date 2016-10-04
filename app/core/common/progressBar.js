@@ -5,11 +5,9 @@ module.exports = angular.module('app.progressBar', [])
         return{
             restrict: 'C',
             link: function ($scope, $element) {
-                $scope.$on('$viewContentLoaded', function() {
-                    angular.element(window).scroll(function () {
-                        $element.css('width', $element.attr('aria-valuetransitiongoal') + '%');
-                    });
+                angular.element(window).scroll(function (event) {
+                    $element.css('width', $element.attr('aria-valuetransitiongoal') + '%');
                 });
             }
-        };
+        }
     });

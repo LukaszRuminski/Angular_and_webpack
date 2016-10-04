@@ -92,8 +92,8 @@
             "rank": "70"
           }
         ],
-        "statics": "Osiągnięcia",
-        "items": [
+        "statics_title": "Osiągnięcia",
+        "statics": [
           {
             "number": "01",
             "text": "dupa1",
@@ -114,8 +114,48 @@
             "text": "dupa4",
             "icon": "fa-comments"
           }
-        ]
+        ],
+        "history_title": "Historia",
+        "history": [
+          {
+            "position": "direction-r",
+            "title": "Freelancer - zlecenia",
+            "time": "2009 - present",
+            "description": "Freelancer na swoim  "
+          },
+          {
+            "position": "direction-r",
+            "title": "Front end developer - HRS",
+            "time": "2014 - present",
+            "description": "Stanowisko Front end developer - praca przy "
+          },
+          {
+            "position": "direction-l",
+            "title": "Web developer - Lionbridge",
+            "time": "2013 - 2014",
+            "description": "Stanowisko Web developer - praca przy "
+          },
+          {
+            "position": "direction-r",
+            "title": "Webmaster - Macmillan",
+            "time": "2012 - 2013",
+            "description": "Stanowisko Webmaster - praca przy "
+          },
+          {
+            "position": "direction-l",
+            "title": "Front end developer - Net Succes",
+            "time": "2011 - 2012",
+            "description": "Stanowisko Front end developer - praca przy "
+          },
+          {
+            "position": "direction-r",
+            "title": "Front end developer - e-Bussines Solutions",
+            "time": "2009 - 2010",
+            "description": "Stanowisko Front end developer - praca przy "
+          }
 
+
+        ]
       }
     }
   },

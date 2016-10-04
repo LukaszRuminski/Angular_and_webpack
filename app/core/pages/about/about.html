@@ -53,7 +53,7 @@
                 <div class="mini-progress left-info" ng-repeat="skills in about.app.texts.about.about_me.skills">
                     <p class="name">{{::skills.name}}</p>
                     <div class="progress">
-                        <div class="progress-bar progress-blue animated-ease-in-out skill-1" aria-valuetransitiongoal="{{::skills.rank}}"> <span class="value">{{::skills.rank}}%</span> </div>
+                        <div class="progress-bar progress-blue" aria-valuetransitiongoal="{{::skills.rank}}"> <span class="value">{{::skills.rank}}%</span> </div>
                     </div>
                 </div><!--end:mini-progress-->
             </div><!--end:col-->
@@ -64,9 +64,9 @@
     <div class="container">
         <div class="row">
             <div class="text-heading large-head center bold">
-                <h1>{{::about.app.texts.about.about_me.statics}}</h1>
+                <h1>{{::about.app.texts.about.about_me.statics_title}}</h1>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" ng-repeat="statics in about.app.texts.about.about_me.items">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" ng-repeat="statics in about.app.texts.about.about_me.statics">
                 <div class="counter-wrap circle" data-scroll-reveal="enter bottom over .3s and move 150px">
                     <i class="fa {{::statics.icon}} "></i>
                     <div class="info">
@@ -81,63 +81,18 @@
 
 </section>
 <section >
-    <div class="text-heading large-head center bold"> <h1>History</h1>  </div>
+    <div class="text-heading large-head center bold"> <h1>{{::about.app.texts.about.about_me.history_title}}</h1>  </div>
     <ul class="timeline">
         <!-- Item 1 -->
-        <li>
-            <div class="direction-r" >
+        <li ng-repeat="timeline in about.app.texts.about.about_me.history ">
+            <div class="{{::timeline.position}}" >
                 <div class="flag-wrapper">
-                    <span class="flag">Freelancer</span>
-                    <span class="time-wrapper"><span class="time">2013 - present</span></span>
+                    <span class="flag">{{::timeline.title}}</span>
+                    <span class="time-wrapper"><span class="time">{{::timeline.time}}</span></span>
                 </div>
-                <div class="desc">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </div>
+                <div class="desc">{{::timeline.description}}</div>
             </div>
         </li>
-
-        <!-- Item 2 -->
-        <li>
-            <div class="direction-l">
-                <div class="flag-wrapper">
-                    <span class="flag">Envato Market</span>
-                    <span class="time-wrapper"><span class="time">2012 - 2013</span></span>
-                </div>
-                <div class="desc"> Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum duis sed odio sit amet nibh vulputate cursus a sit amet mauris.  </div>
-            </div>
-        </li>
-
-        <!-- Item 3 -->
-        <li>
-            <div class="direction-r">
-                <div class="flag-wrapper">
-                    <span class="flag">Joomlashine.com</span>
-                    <span class="time-wrapper"><span class="time">2010 - 2011</span></span>
-                </div>
-                <div class="desc">Class aptent taciti highlighted text per conubia nostra, per inceptos himenaeos. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </div>
-            </div>
-        </li>
-
-        <!-- Item 3 -->
-        <li>
-            <div class="direction-l">
-                <div class="flag-wrapper">
-                    <span class="flag">Apple Inc</span>
-                    <span class="time-wrapper"><span class="time">2009 - 2010</span></span>
-                </div>
-                <div class="desc">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</div>
-            </div>
-        </li>
-
-        <!-- Item 4 -->
-        <li>
-            <div class="direction-r">
-                <div class="flag-wrapper">
-                    <span class="flag">Harvard University</span>
-                    <span class="time-wrapper"><span class="time">2008 - 209</span></span>
-                </div>
-                <div class="desc">Nam nec tellus a odio tincidunt auctor a ornare odio.</div>
-            </div>
-        </li>
-
     </ul>
 </section>
 
