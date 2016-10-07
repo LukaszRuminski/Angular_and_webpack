@@ -6,6 +6,7 @@ var APP =  path.join(__dirname, '/app');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var ModernizrWebpackPlugin = require('modernizr-webpack-plugin');
 var CompressionPlugin = require("compression-webpack-plugin");
+var PurifyCssPlugin = require("purifycss-webpack-plugin");
 
 module.exports = {
     context: APP,
@@ -21,7 +22,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract("style", "css!sass?sourceMap")
+                loader: ExtractTextPlugin.extract("style", "!css!sass?sourceMap&-minimize!")
             },
             {
                 test: /\.css$/,
@@ -66,6 +67,30 @@ module.exports = {
         },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
+        // new PurifyCssPlugin({
+        //     basePath: __dirname,
+        //     paths: [
+        //         "app/core/*/*.html",
+        //         "app/core/pages/*/*.html",
+        //         "app/*.html"
+        //     ],
+        //     purifyOptions: {
+        //         info: true,
+        //         minify: true}
+        // }),
+        // new webpack.optimize.DedupePlugin(),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: {
+        //         warnings: false
+        //     }
+        // }),
+        // new CompressionPlugin({
+        //     asset: "[path].gz[query]",
+        //     algorithm: "gzip",
+        //     test: /\.js$|\.css$|\.html$/,
+        //     threshold: 10240,
+        //     minRatio: 0.8
+        // }),
         new webpack.DefinePlugin({
             MODE: {
                 production: process.env.NODE_ENV === 'dev'
@@ -75,21 +100,10 @@ module.exports = {
             allChunks: true
         }),
         new ModernizrWebpackPlugin()
-        // new webpack.optimize.UglifyJsPlugin({
-        //     compress: {
-        //         warnings: false
-        //     }
-        // }),
-        // new CompressionPlugin({
-        //     asset: "[path].gz[query]",
-        //     algorithm: "deflate",
-        //     test: /\.js$|\.css$|\.html$/,
-        //     threshold: 0,
-        //     minRatio: 0.5
-        // })
     ],
     devServer: {
+        // compress: true,
         inline:true,
-        port: 7070
+        port: 7777
     }
 };

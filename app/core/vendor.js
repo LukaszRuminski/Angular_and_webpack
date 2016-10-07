@@ -9,6 +9,7 @@ module.exports = function () {
     require('sizzle');
     require('angular');
     require('angular-ui-router');
+    require('ngmap')
     require('ng-dialog');
     require('../assets/js/main.js');
     global.classie = require('classie');

@@ -15,7 +15,58 @@
   height: 450px;
   position: relative;
 }
+.text-heading.large-head, .text-heading.large-head2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.text-heading {
+  width: 100%;
+  position: relative;
+  margin: 30px 0;
+}
+.text-heading.bold.large-head:before {
+  top: 60px;
+}
+.text-heading.large-head:before, .text-heading.large-head2:before {
+  width: 160px;
+  left: 50%;
+  margin-left: -80px;
+  top: 44px;
+}
+.text-heading:before {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: rgba(145,145,145,.5);
+  position: absolute;
+  top: 12px;
+}
+.text-heading.bold.large-head:after {
+  top: 59px;
+}
+.text-heading.large-head:after {
+  width: 60px;
+  left: 50%;
+  margin-left: -30px;
+  top: 43px;
+  background-color: #5ea7f0;
+  height: 3px;
+  border: none;
+  border-radius: 0;
+}
 
+.text-heading:after, .text-heading h3:after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #FFF;
+  border: 1px solid #d9d9d9;
+  top: 9px;
+  right: 0;
+  left: auto;
+  position: absolute;
+}
 .h1-slide {
   background: url("../../../assets/images/backgrounds/banner.svg") no-repeat scroll center bottom, linear-gradient(-45deg, #673c8e, #236295, #9869ff) repeat scroll 0 0 rgba(0, 0, 0, 0);
   background-size: cover;
@@ -222,7 +273,7 @@ Progress-Bar
     height: 6px;
     overflow: inherit;
     margin-bottom: 10px;
-    @include color-divs(5,'skill', #3d80f0);
+    @include color-divs(5,'skill', #5ea7f0);
     .progress-bar {
       box-shadow: none;
       border-radius: 3px;
@@ -303,7 +354,19 @@ Progress-Bar
     font-weight: 100;
   }
 }
-
+.action-box.ab-flat {
+  border: none;
+  background-color: #0f0f0f;
+  color: rgba(255, 255, 255,.6);
+  padding: 40px 20px;
+}
+.action-box {
+  display: inline-block;
+  width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #f2f2f2;
+}
 
 /*===========
  grubson-design

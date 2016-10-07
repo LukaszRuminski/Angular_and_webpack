@@ -12,5 +12,6 @@ module.exports = angular.module('app', [
     require('./core/common/isotope-width').name,
     require('./core/common/prettyPhotos').name,
     require('./core/common/progressBar').name,
+    // require('./core/common/googleMap').name,
     require('./core/common/scrollRevel').name
 ])

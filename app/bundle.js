@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9579c7ac9e5802913e58"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "af1caa9143b9b8379ce7"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -44712,7 +44712,150 @@
 		"texts": {
 			"home": {
 				"top_heading": "Witam w GrubsonDesign",
-				"top_sentence": "W miejscu gdzie Państwa marzenia o zaprezentowaniu siebie lub własnej firmy w internecia nabiorą nowych wymiarów"
+				"top_sentence": "W miejscu gdzie Państwa marzenia o zaprezentowaniu siebie lub własnej firmy w internecia nabiorą nowych wymiarów",
+				"assets": [
+					{
+						"title": "Responsive Design i Development",
+						"text": "Tworzymy projekty multi-platformowe i respnsywne dzięki nam zaprezentujesz sie na każdej platformie",
+						"icon": "fa-mobile"
+					},
+					{
+						"title": "asset 2 title",
+						"text": "asset 2 text",
+						"icon": "fa-gear"
+					},
+					{
+						"title": "asset 3 title",
+						"text": "asset 3 text",
+						"icon": "fa-flash"
+					}
+				]
+			},
+			"about": {
+				"top_heading": "Witam nazywam sie Łukasz",
+				"top_sentence": [
+					{
+						"bullet": "Od 2007"
+					},
+					{
+						"bullet": "bla bla bla 2"
+					},
+					{
+						"bullet": "bla bla bla 3"
+					},
+					{
+						"bullet": "bla bla bla 4"
+					}
+				],
+				"info_about": {
+					"birthdate": ".Data urodzenia",
+					"birthdate_value": "17-05-1986",
+					"works_as": ".Stanowisko",
+					"works_as_value": "Frontend developer w HRS",
+					"phone_number": ".Numer Telefonu",
+					"phone_number_value": "+48 790 029 836",
+					"email": ".Email",
+					"email_value": "l.ruminski@grubson-design.com.pl"
+				},
+				"about_me": {
+					"my_history_title": "Moja Historia",
+					"my_history_text": [
+						{
+							"paragraph": "info infon"
+						},
+						{
+							"paragraph": "info infon 1"
+						},
+						{
+							"paragraph": "info infon 2"
+						}
+					],
+					"skills_title": "Umiejętności",
+					"skills": [
+						{
+							"name": "dupa",
+							"rank": "20"
+						},
+						{
+							"name": "dupa1",
+							"rank": "50"
+						},
+						{
+							"name": "dupa2",
+							"rank": "90"
+						},
+						{
+							"name": "dupa3",
+							"rank": "99"
+						},
+						{
+							"name": "dupa4",
+							"rank": "70"
+						}
+					],
+					"statics_title": "Osiągnięcia",
+					"statics": [
+						{
+							"number": "01",
+							"text": "dupa1",
+							"icon": "fa-graduation-cap"
+						},
+						{
+							"number": "20002",
+							"text": "dupa2",
+							"icon": "fa-clock-o"
+						},
+						{
+							"number": "3000",
+							"text": "dupa3",
+							"icon": "fa-suitcase"
+						},
+						{
+							"number": "12",
+							"text": "dupa4",
+							"icon": "fa-comments"
+						}
+					],
+					"history_title": "Historia",
+					"history": [
+						{
+							"position": "direction-r",
+							"title": "Freelancer - zlecenia",
+							"time": "2009 - present",
+							"description": "Freelancer na swoim  "
+						},
+						{
+							"position": "direction-r",
+							"title": "Front end developer - HRS",
+							"time": "2014 - present",
+							"description": "Stanowisko Front end developer - praca przy "
+						},
+						{
+							"position": "direction-l",
+							"title": "Web developer - Lionbridge",
+							"time": "2013 - 2014",
+							"description": "Stanowisko Web developer - praca przy "
+						},
+						{
+							"position": "direction-r",
+							"title": "Webmaster - Macmillan",
+							"time": "2012 - 2013",
+							"description": "Stanowisko Webmaster - praca przy "
+						},
+						{
+							"position": "direction-l",
+							"title": "Front end developer - Net Succes",
+							"time": "2011 - 2012",
+							"description": "Stanowisko Front end developer - praca przy "
+						},
+						{
+							"position": "direction-r",
+							"title": "Front end developer - e-Bussines Solutions",
+							"time": "2009 - 2010",
+							"description": "Stanowisko Front end developer - praca przy "
+						}
+					]
+				}
 			}
 		},
 		"links": [
@@ -44919,7 +45062,7 @@
 	    this.app = __webpack_require__(24);
 	}
 	module.exports = function () {
-	    __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./about.scss\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	    __webpack_require__(35);
 	    __webpack_require__(33);
 	    __webpack_require__(18);
 	    return {
@@ -44930,7 +45073,12 @@
 	};
 
 /***/ },
-/* 35 */,
+/* 35 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
 /* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -45794,10 +45942,8 @@
 	    return {
 	        restrict: 'C',
 	        link: function link($scope, $element) {
-	            $scope.$on('$viewContentLoaded', function () {
-	                angular.element(window).ready(function (e) {
-	                    $element.css('width', $element.attr('aria-valuetransitiongoal') + '%');
-	                });
+	            angular.element(window).scroll(function (event) {
+	                $element.css('width', $element.attr('aria-valuetransitiongoal') + '%');
 	            });
 	        }
 	    };

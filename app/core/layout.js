@@ -1,4 +1,4 @@
-module.exports =  angular.module('app.layout', ['ui.router', 'ngDialog'])
+module.exports =  angular.module('app.layout', ['ui.router', 'ngDialog', 'ngMap'])
     .run(['$rootScope', '$state', '$stateParams', '$timeout',  function ($rootScope,   $state,   $stateParams, $timeout) {
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
@@ -22,10 +22,20 @@ module.exports =  angular.module('app.layout', ['ui.router', 'ngDialog'])
                 containerClass: "about",
                 templateUrl: "../core/pages/about/about.html"
             })
+            .state('offer', {
+                url: "/offer",
+                containerClass: "offer",
+                templateUrl: "../core/pages/offer/offer.html"
+            })
             .state('portfolio', {
                 url: "/portfolio",
                 containerClass: "portfolio",
                 templateUrl: "../core/pages/portfolio/portfolio.html"
+            })
+            .state('contact', {
+                url: "/contact",
+                containerClass: "contact",
+                templateUrl: "../core/pages/contact/contact.html"
             });
     }])
     .config(["ngDialogProvider", function (ngDialogProvider) {
@@ -46,5 +56,7 @@ module.exports =  angular.module('app.layout', ['ui.router', 'ngDialog'])
     .directive('content', require('./content/content'))
     .directive('home', require('./pages/home/home'))
     .directive('about', require('./pages/about/about'))
-    .directive('portfolio', require('./pages/portfolio/portfolio'));
+    .directive('portfolio', require('./pages/portfolio/portfolio'))
+    .directive('offer', require('./pages/offer/offer'))
+    .directive('contact', require('./pages/contact/contact'));
 // .directive('modalView', require('./common/prettyPhotos'));

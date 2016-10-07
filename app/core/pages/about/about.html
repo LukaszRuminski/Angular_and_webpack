@@ -53,7 +53,7 @@
                 <div class="mini-progress left-info" ng-repeat="skills in about.app.texts.about.about_me.skills">
                     <p class="name">{{::skills.name}}</p>
                     <div class="progress">
-                        <div class="progress-bar progress-blue" aria-valuetransitiongoal="{{::skills.rank}}"> <span class="value">{{::skills.rank}}%</span> </div>
+                        <div class="progress-bar progress-blue skill-{{$index}}" aria-valuetransitiongoal="{{::skills.rank}}"> <span class="value">{{::skills.rank}}%</span> </div>
                     </div>
                 </div><!--end:mini-progress-->
             </div><!--end:col-->
@@ -83,7 +83,8 @@
 <section >
     <div class="text-heading large-head center bold"> <h1>{{::about.app.texts.about.about_me.history_title}}</h1>  </div>
     <ul class="timeline">
-        <!-- Item 1 -->
+        <!-- Item 1 -->npm start
+
         <li ng-repeat="timeline in about.app.texts.about.about_me.history ">
             <div class="{{::timeline.position}}" >
                 <div class="flag-wrapper">

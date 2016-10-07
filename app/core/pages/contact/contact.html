@@ -1,0 +1,11 @@
+<div map-lazy-load="https://maps.google.com/maps/api/js" id="map">
+    <ng-map zoom="13" center="1600 pennsylvania ave, washington DC" on-center-changed="centerCustomMarker()">
+        <custom-marker position="10 pennsylvania ave, washington DC">
+            <div id="content">
+                <div id="siteNotice"></div>
+                <h4>We Are Here</h4>
+                <p>Description</p>
+            </div>
+        </custom-marker>
+    </ng-map>
+</div>

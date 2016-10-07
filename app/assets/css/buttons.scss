@@ -44,6 +44,7 @@
   font-size: 14px;
   height: 60px;
   padding: 0px 50px;
+
 }
 
 .btn {
@@ -63,23 +64,12 @@
   }
 }
 
-.btn-violet {
-  background: #8D84E4;
+.btn-blue {
+  background: #DDDDDD;
+  color: #7d7d7d;
   &:hover {
-    background: #3d3d3d;
+    background: #5ea7f0;
   }
-}
-
-.btn-dark {
-  background: #3d3d3d;
-}
-
-.btn-orange {
-  background: #ff8400;
-}
-
-.btn-pink {
-  background: #ff6bb1;
 }
 
 /* Line button */
