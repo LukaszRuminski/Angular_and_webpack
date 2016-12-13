@@ -1,11 +1,63 @@
-<div map-lazy-load="https://maps.google.com/maps/api/js" id="map">
-    <ng-map zoom="13" center="1600 pennsylvania ave, washington DC" on-center-changed="centerCustomMarker()">
-        <custom-marker position="10 pennsylvania ave, washington DC">
-            <div id="content">
-                <div id="siteNotice"></div>
-                <h4>We Are Here</h4>
-                <p>Description</p>
-            </div>
-        </custom-marker>
+<div id="map">
+    <ng-map default-style="true" zoom="{{::contact.app.texts.contact.map_zoom}}" center="{{::contact.app.texts.contact.map_cord}}">
+        <marker icon="{{contact.customIcon}}" position="{{::contact.app.texts.contact.map_cord}}" icon="{{::contact.app.texts.contact.icon.url}}"></marker>
     </ng-map>
+</div>
+<div id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+
+                <!-- Google Map -->
+                <div  class="row">
+                    <div class="col-md-12">
+                        <div class="text-heading line"> <h3> Get in touch</h3> </div>
+                        <p>Add forms with different fields, captchas, buttons, create awesome texts with nice elements or just add simple box with contact details.</p>
+                        <div class="contact-wrap">
+                            <form id="contact-form" action="processForm.php" method="post">
+                                <p class="input-block">
+                                    <label class="required" for="contact_name">Name <span>*</span></label>
+                                    <input class="valid" type="text" name="name" id="contact_name" value="">
+                                </p>
+                                <p class="input-block">
+                                    <label class="required" for="contact_email">Email <span>*</span></label>
+                                    <input type="email" class="valid" name="email" id="contact_email" value="">
+                                </p>
+                                <p class="input-block end">
+                                    <label class="required" for="contact_url">Website</label>
+                                    <input type="url" value="" id="contact_url" name="url">
+                                </p>
+                                <p class="textarea-block">
+                                    <label class="required" for="contact_message">Message <span>*</span></label>
+                                    <textarea rows="6" cols="40" id="contact_message" name="message"></textarea>
+                                </p>
+                                <p>
+                                    <button class="btn btn-violet btn-lg btn-block" type="submit" id="submit-contact"  value="Send message"> Sent message </button>
+                                </p>
+                            </form>
+
+                        </div>
+                    </div><!--end:col-->
+                </div><!--end:row-->
+
+
+
+
+            </div><!--end:left content -->
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="text-block">
+                    <div class="text-heading line"> <h3><i class="fa fa-clock-o"></i>&nbsp;{{::contact.app.texts.contact.open_hours_title}}</h3> </div>
+                    <p ng-repeat="open_hours in contact.app.texts.contact.open_hours"><strong>{{::open_hours.day}}</strong>&nbsp;{{::open_hours.hours}}</p>                </div>
+                <div class="text-block">
+                    <div class="text-heading line"> <h3><i class="fa fa-info-circle"></i>&nbsp;{{::contact.app.texts.contact.contact_info_title}}</h3> </div>
+                    <p ng-repeat="contact_info in contact.app.texts.contact.contact_info">	<strong>{{::contact_info.type}}</strong><a ng-if="contact_info.type == 'Email:'" href='mailto:"{{::contact_info.link}}"'>&nbsp;{{::contact_info.link}}</a>&nbsp;{{::contact_info.value}}</p>
+                </div>
+
+                <div class="socials circle-icon border-group">
+                    <a ng-repeat="social in contact.app.texts.contact.social" href="{{::social.link}}" class="{{::social.name}}">		<i class="fa fa-{{::social.name}}"></i> 		<span>{{::social.name}}</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
