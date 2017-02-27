@@ -1,5 +1,5 @@
 function ProgressBarCtrl () {
-        this.app = require('index.json');
+        this.app = require('../../index.json');
 }
 module.exports = function() {
     require('./progress.scss');

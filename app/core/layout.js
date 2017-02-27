@@ -58,5 +58,6 @@ module.exports =  angular.module('app.layout', ['ui.router', 'ngDialog', 'ngMap'
     .directive('about', require('./pages/about/about'))
     .directive('portfolio', require('./pages/portfolio/portfolio'))
     .directive('offer', require('./pages/offer/offer'))
-    .directive('contact', require('./pages/contact/contact'));
+    .directive('contact', require('./pages/contact/contact'))
+    .directive('responsive', require('./pages/responsive.css'));
 // .directive('modalView', require('./common/prettyPhotos'));

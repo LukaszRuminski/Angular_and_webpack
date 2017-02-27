@@ -3,7 +3,6 @@ function AboutController () {
 }
 module.exports = function() {
     require('./about.scss');
-    require('./../../../assets/css/responsive.css');
     require('./../../../assets/js/scrollReveal.js');
     return {
         controller: AboutController,

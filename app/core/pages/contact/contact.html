@@ -1,6 +1,7 @@
 <div id="map">
-    <ng-map default-style="true" zoom="{{::contact.app.texts.contact.map_zoom}}" center="{{::contact.app.texts.contact.map_cord}}">
-        <marker icon="{{contact.customIcon}}" position="{{::contact.app.texts.contact.map_cord}}" icon="{{::contact.app.texts.contact.icon.url}}"></marker>
+    <ng-map default-style="false" zoom="{{::contact.app.texts.contact.map_zoom}}" center="{{::contact.app.texts.contact.map_cord}}">
+        <!--<marker optimized="false" icon="{{contact.customIcon}}" position="{{::contact.app.texts.contact.map_cord}}"></marker>-->
+        <marker animation="BOUNCE" optimized="false" position="{{::contact.app.texts.contact.map_cord}}" icon="{{::contact.app.texts.contact.icon}}"></marker>
     </ng-map>
 </div>
 <div id="main">

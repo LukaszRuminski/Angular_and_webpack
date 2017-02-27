@@ -3,7 +3,6 @@ function PortfolioController () {
 }
 module.exports = function(){
     require('./portfolio.scss');
-    require('./../../../assets/css/responsive.css');
     require('./../../../assets/js/fancySelect');
     require('./../../../assets/js/isotope.pkgd.min');
     return {

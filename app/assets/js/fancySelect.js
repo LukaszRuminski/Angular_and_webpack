@@ -101,7 +101,8 @@
       sel.on('disable', function() {
         sel.prop('disabled', true);
         wrapper.addClass('disabled');
-        return disabled = true;
+        disabled = true;
+        return false;
       });
       sel.on('change.fs', function(e) {
         if (e.originalEvent && e.originalEvent.isTrusted) {

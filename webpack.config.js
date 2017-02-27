@@ -26,7 +26,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader:  ExtractTextPlugin.extract("style", "css")
+                loader:  ExtractTextPlugin.extract("style", "css!purifycss")
             },
             {
                 test: /\.js$/,
@@ -66,17 +66,23 @@ module.exports = {
             child_process: 'empty'
         },
     plugins: [
+        new ExtractTextPlugin("style.css", {
+            // allChunks: true
+        }),
         new webpack.HotModuleReplacementPlugin(),
         // new PurifyCssPlugin({
         //     basePath: __dirname,
         //     paths: [
         //         "app/core/*/*.html",
         //         "app/core/pages/*/*.html",
-        //         "app/*.html"
+        //         "app/*.html",
+        //         "app/*.js"
+        //         // "app/*/*/*/*"
         //     ],
         //     purifyOptions: {
-        //         info: true,
-        //         minify: true}
+        //         info: true
+        //         // minify: true
+        //     }
         // }),
         // new webpack.optimize.DedupePlugin(),
         // new webpack.optimize.UglifyJsPlugin({
@@ -95,9 +101,6 @@ module.exports = {
             MODE: {
                 production: process.env.NODE_ENV === 'dev'
             }
-        }),
-        new ExtractTextPlugin("style.css", {
-            allChunks: true
         }),
         new ModernizrWebpackPlugin()
     ],

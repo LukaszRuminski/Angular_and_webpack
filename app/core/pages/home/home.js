@@ -3,7 +3,6 @@ function HomeController (){
 }
 module.exports = function () {
     require('./home.scss');
-    require('./../../../assets/css/responsive.css');
     require('./../../../assets/js/scrollReveal.js');
     return {
         controller: HomeController,
