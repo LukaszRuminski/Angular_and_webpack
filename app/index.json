@@ -261,48 +261,57 @@
   ],
   "works": [
     {
+      "title": "dupa1",
       "links": "../template/placeholders/portfolio/square/5.jpg",
       "height": 1,
       "type": "www_pages"
     },
     {
+      "title": "dupa2",
       "links": "../template/placeholders/portfolio/square/1.jpg",
       "width": 1,
       "type": "www_pages"
     },
     {
+      "title": "dupa3",
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 1,
       "type": "e_commerce"
     },
     {
+      "title": "dupa4",
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 2,
       "height": 2,
       "type": "e_commerce"
     },
     {
+      "title": "dupa5",
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "height": 1,
       "type": "graphics"
     },
     {
+      "title": "dupa6",
       "links": "../template/placeholders/portfolio/square/1.jpg",
       "width": 1,
       "type": "graphics"
     },
     {
+      "title": "dupa7",
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 1,
       "type": "graphics"
     },
     {
+      "title": "dupa8",
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 2,
       "height": 2,
       "type": "banners"
     },
     {
+      "title": "dupa9",
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "height": 1,
       "type": "banners"

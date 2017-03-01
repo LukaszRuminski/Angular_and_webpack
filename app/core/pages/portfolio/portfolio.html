@@ -12,9 +12,9 @@
                 <div class="p-item">
                     <div class="pthumb">
                         <div class="mask">
-                            <h3><a href="port-single.html">Desicription</a></h3>
+                            <h3><a ui-sref="portfolio-item({itemID: works.title})">{{::works.title}}</a></h3>
                             <a ng-href="" class="modalView" ng-controller="ViewModalCtrl" ng-click="openTemplate()"><i class="fa fa-search zoom"></i></a>
-                            <a href="port-single.html" class="info"><i class="fa fa-info-circle info"></i></a>
+                            <a ui-sref="../portfolio_item/portfolio_item.html" class="info"><i class="fa fa-info-circle info"></i></a>
                             <span class="glass"></span>
                         </div>
                         <img src="../../../assets/placeholders/portfolio/square/5.jpg">

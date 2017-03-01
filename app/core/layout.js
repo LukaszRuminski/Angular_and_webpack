@@ -7,7 +7,7 @@ module.exports =  angular.module('app.layout', ['ui.router', 'ngDialog', 'ngMap'
             $rootScope.containerClass = toState.containerClass;
         });
     }])
-    .config(['$stateProvider', '$urlRouterProvider' , function($stateProvider, $urlRouterProvider){
+    .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise("/home");
         //
         // Now set up the states
@@ -32,6 +32,12 @@ module.exports =  angular.module('app.layout', ['ui.router', 'ngDialog', 'ngMap'
                 containerClass: "portfolio",
                 templateUrl: "../core/pages/portfolio/portfolio.html"
             })
+            .state('portfolio-item', {
+                url: "/portfolio-item/:itemID",
+                containerClass: "portfolio-item",
+                controller: "PortfolioItemStateController",
+                templateUrl: "../core/pages/portfolioview/portfolioview.html"
+            })
             .state('contact', {
                 url: "/contact",
                 containerClass: "contact",
@@ -51,12 +57,19 @@ module.exports =  angular.module('app.layout', ['ui.router', 'ngDialog', 'ngMap'
             }
         });
     }])
-.directive('progressBar', require('./progress/progress'))
+    .config(['$qProvider', function ($qProvider) {
+        $qProvider.errorOnUnhandledRejections(false);
+    }])
+    .controller("PortfolioItemStateController", [ '$scope', '$stateParams', function ($scope, $stateParams) {
+        $scope.id = $stateParams.itemID;
+    }])
+    .directive('progressBar', require('./progress/progress'))
     .directive('navigation', require('./nav/nav'))
     .directive('content', require('./content/content'))
     .directive('home', require('./pages/home/home'))
     .directive('about', require('./pages/about/about'))
     .directive('portfolio', require('./pages/portfolio/portfolio'))
+    .directive('portfolioview', require('./pages/portfolioview/portfolioview'))
     .directive('offer', require('./pages/offer/offer'))
     .directive('contact', require('./pages/contact/contact'))
     .directive('responsive', require('./pages/responsive.css'));

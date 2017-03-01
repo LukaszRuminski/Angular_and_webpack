@@ -1,7 +1,7 @@
-function PortfolioController () {
-        this.app = require('index.json');
+function PortfolioController() {
+    this.app = require('index.json');
 }
-module.exports = function(){
+module.exports = function () {
     require('./portfolio.scss');
     require('./../../../assets/js/fancySelect');
     require('./../../../assets/js/isotope.pkgd.min');
@@ -10,5 +10,5 @@ module.exports = function(){
         controllerAs: 'portfolio',
         templateUrl: './core/pages/portfolio/portfolio.html'
     };
-}
+};
 
