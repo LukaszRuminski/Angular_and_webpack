@@ -1,7 +1,7 @@
-function AboutController () {
-        this.app = require('index.json');
+function AboutController() {
+    this.app = require('index.json');
 }
-module.exports = function() {
+module.exports = function () {
     require('./about.scss');
     require('./../../../assets/js/scrollReveal.js');
     return {

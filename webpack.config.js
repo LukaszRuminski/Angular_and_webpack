@@ -16,7 +16,8 @@ module.exports = {
     },
     output: {
         path: APP,
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        chunkFilename: "[id].js"
     },
     module: {
         loaders: [

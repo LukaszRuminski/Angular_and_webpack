@@ -1,10 +1,10 @@
 <div class="pro-title-bar">
-    <div class="container">
-        <h3><img src="placeholders/portfolio/p5-80x80.jpg"> Airplan icon design</h3>
+    <div class="container" >
+        <h3>Airplan icon design</h3>
         <ul>
-            <li><a href="port-s-audio.html"><i class="fa fa-angle-right"></i></a></li>
-            <li><a href="port-grid.html"><i class="fa fa-th"></i></a></li>
-            <li><a href="port-s-video.html"><i class="fa fa-angle-left"></i></a></li>
+            <li><a ng-disabled="currentPage <= items.length/pageSize - 1" ng-click="currentPage=currentPage+1"><i class="fa fa-angle-right"></i>{{currentPage+1}}</a></li>
+            <li><a ui-sref="portfolio"><i class="fa fa-th"></i></a></li>
+            <li><a ng-disabled="" ng-click="currentPage=currentPage-1">{{currentPage-1}}<i class="fa fa-angle-left"></i></a></li>
         </ul>
     </div>
 </div><!--end:pro-title-bar-->
@@ -17,20 +17,6 @@
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 portfolio-single-content">
-                <div class="share">
-                    <div class="socials">
-                        <a href="#" class="facebook">		<i class="fa fa-facebook"></i> 		<span>facebook</span></a>
-                        <a href="#" class="twitter">		<i class="fa fa-twitter"></i> 		<span>twitter</span></a>
-                        <a href="#" class="pinterest">		<i class="fa fa-pinterest"></i> 		<span>Pinterest</span></a>
-                        <a href="#" class="dribbble">		<i class="fa fa-dribbble"></i> 		<span>dribbble</span></a>
-                        <a href="#" class="rss">			<i class="fa fa-rss"></i> 			<span>Rss</span></a>
-                    </div>
-                    <div class="like-button">
-                        <a href="#"><i class="fa fa-heart"></i></a>
-                        <span>12</span>
-                    </div>
-                    <div class="clear"></div>
-                </div><!--end:share-->
                 <div class="text-heading pattern"> <h3>Description</h3> </div>
                 <div class="desc">
                     <p>Ferri reque integre mea ut, eu eos vide errem noluise se. Putent laoreet et ius utroque dissentias ut, nam ad soleat alterum maluisset.Putent laoreet et ius utroque dissentias ut, nam ad soleat alterum maluisset laoreet.</p>
