@@ -1,5 +1,5 @@
 .btn, .btn-small, .btn-large, .btn-large-icon{
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     color:#fff;
     -webkit-font-smoothing: subpixel-antialiased;
     font-size:14px;
@@ -175,7 +175,7 @@
     left:50px;
     height:100%;
     border-left:1px solid rgba(255,255,255,.1);
-    content:"";
+    content:'';
 }
 .btn-default.btn-icon:after {
     border-left:1px solid rgba(0,0,0,.05);

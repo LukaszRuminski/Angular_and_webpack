@@ -4,8 +4,8 @@ function it_option_reset_CLICK(){
 
 jQuery(document).ready(function($) {     
     it_style_switch_INIT();
-    jQuery(".choose-color a.purple").addClass("active");
-	jQuery("input:radio[name="it-select-layout-choice"][value="full"]").prop("checked", true);
+    jQuery('.choose-color a.purple').addClass('active');
+	jQuery('input:radio[name="it-select-layout-choice"][value="full"]').prop('checked', true);
 });
 
 function it_style_switch_INIT(){   
@@ -51,38 +51,38 @@ function it_style_switch_INIT(){
         return false;
     });
 		
-    jQuery(".choose-color a").click(function(e){
+    jQuery('.choose-color a').click(function(e){
         e.preventDefault();
-        jQuery(this).parent().parent().find("a").removeClass("active");
-        jQuery(this).addClass("active");
+        jQuery(this).parent().parent().find('a').removeClass('active');
+        jQuery(this).addClass('active');
     });
 	
 	jQuery("#it-select-boxed-layout" ).click(function(){
-        jQuery("body" ).addClass("boxed");
+        jQuery("body" ).addClass('boxed');
     });
 	
 	jQuery("#it-select-full-layout" ).click(function(){
-        jQuery("body" ).removeClass("boxed");
+        jQuery("body" ).removeClass('boxed');
     });
 		
 		
     
 jQuery(window).load(function($) {	
     // Switcher Layout
-    jQuery("#theme-option").animate({
-        left: "-200px"
+    jQuery('#theme-option').animate({
+        left: '-200px'
     });
 		
-    jQuery(".open-close-button").click(function(e){
+    jQuery('.open-close-button').click(function(e){
         e.preventDefault();
-        var div = jQuery("#theme-option");
-        if (div.css("left") === "-200px") {
-            jQuery("#theme-option").animate({
-                left: "0px"
+        var div = jQuery('#theme-option');
+        if (div.css('left') === '-200px') {
+            jQuery('#theme-option').animate({
+                left: '0px'
             }); 
         } else {
-            jQuery("#theme-option").animate({
-                left: "-200px"
+            jQuery('#theme-option').animate({
+                left: '-200px'
             });
         }
     });
@@ -90,9 +90,9 @@ jQuery(window).load(function($) {
 		
 		
     // Reset
-    jQuery("a.reset").click(function(e){
-        jQuery(".color.purple").trigger("click");
-		 jQuery("#it-select-full-layout").trigger("click");
-        jQuery(".theme-opt-wrapper select[name=layout]").val("full");
+    jQuery('a.reset').click(function(e){
+        jQuery('.color.purple').trigger('click');
+		 jQuery('#it-select-full-layout').trigger('click');
+        jQuery('.theme-opt-wrapper select[name=layout]').val('full');
     });				    
 }

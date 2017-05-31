@@ -1,13 +1,14 @@
-function AboutController() {
-    this.app = require("index.json");
+function AboutController () {
+        this.app = require('index.json');
 }
-module.exports = function () {
-    require("./about.scss");
-    require("./../../../assets/js/scrollReveal.js");
+module.exports = function() {
+    require('./about.scss');
+    require('./../../../assets/css/responsive.css');
+    require('./../../../assets/js/scrollReveal.js');
     return {
         controller: AboutController,
-        controllerAs: "about",
-        templateUrl: "./core/pages/about/about.html"
+        controllerAs: 'about',
+        templateUrl: './core/pages/about/about.html'
     };
 };
 

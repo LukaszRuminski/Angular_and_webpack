@@ -7,7 +7,7 @@
     "angular-ui-router": "^0.3.1",
     "classie": "^1.0.0",
     "exports-loader": "^0.6.3",
-    "extract-text-webpack-plugin": "*",
+    "extract-text-webpack-plugin": "^1.0.1",
     "isotope": "0.0.1-security",
     "jquery-ui": "^1.12.0",
     "mdi": "^1.0.8-beta",
@@ -16,8 +16,7 @@
     "ng-dialog": "^0.6.2",
     "ngmap": "^1.17.7",
     "node-sass": "^3.9.3",
-    "path": "^0.12.7",
-    "purifycss-loader": "^1.0.1"
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "amd-define-factory-patcher-loader": "^1.0.0",
@@ -29,21 +28,19 @@
     "compression-webpack-plugin": "^0.3.1",
     "css-loader": "^0.23.1",
     "file-loader": "^0.9.0",
-    "glob": "^7.1.1",
     "imports-loader": "*",
     "jshint": "^2.9.2",
     "jshint-loader": "^0.8.3",
     "json-loader": "^0.5.4",
     "karma-chrome-launcher": "^1.0.1",
     "ng-annotate-loader": "^0.1.1",
-    "purifycss-webpack": "^0.4.2",
+    "purifycss-webpack-plugin": "^2.0.3",
     "raw-loader": "^0.5.1",
     "sass-loader": "^4.0.0",
     "sizzle": "^2.3.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1",
-    "webpack-merge": "^2.6.1"
+    "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
     "start": "webpack-dev-server --content-base app --hot",

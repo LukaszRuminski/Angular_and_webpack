@@ -40,7 +40,7 @@
 </g>
 <g id="cc">
 	<rect x="49" y="2" display="none" fill="#3D3D3D" stroke="#B0B0B0" width="14" height="12"/>
-	<text transform="matrix(1 0 0 1 49 17)" fill="#3D3D3D" font-family=""ArialMT"" font-size="10">cc</text>
+	<text transform="matrix(1 0 0 1 49 17)" fill="#3D3D3D" font-family="'ArialMT'" font-size="10">cc</text>
 	<path fill="#3D3D3D" stroke="#FFFFFF" d="M55,7c-4.719-3.219-4.937,5.94,0,3"/>
 	<path fill="#3D3D3D" stroke="#FFFFFF" d="M60,7c-4.719-3.219-4.937,5.94,0,3"/>
 	<path fill="#3D3D3D" d="M50,3h12v10H50V3z M49,2v12h14V2H49z"/>

@@ -159,12 +159,13 @@
       }
     },
     "contact": {
-      "map_cord" : "52.271125, 21.044687",
+      "map_cord" : "52.271226,21.044173",
       "map_zoom" : 17,
       "icon": {
-          "url": "./assets/placeholders/GD_logo_menu.png#white",
-          "origin": [0, 0],
-          "anchor": [50, 50]
+          "path": "M9.778,104h38.222v16h-8.079999999999998c-4.374000000000002,0,-7.920000000000002,3.5460000000000065,-7.920000000000002,7.920000000000002v0.0799999999999983h64v-0.0799999999999983c0,-4.373999999999995,-3.5460000000000065,-7.920000000000002,-7.920000000000002,-7.920000000000002h-8.079999999999998v-16h38.22200000000001c5.400000000000006,0,9.777999999999992,-4.378,9.777999999999992,-9.778000000000006v-76.445c0,-5.4,-4.378,-9.778,-9.778000000000006,-9.778h-108.445c-5.4,0,-9.778,4.378,-9.778,9.778v76.445c0,5.400000000000006,4.378,9.778000000000006,9.778,9.778000000000006ZM8,16h112v80h-112v-80Z",
+          "url": "./assets/placeholders/GD_logo_menu.png",
+          "scaledSize":[32,32],
+          "origin": [62,57]
       },
       "open_hours_title": "Godziny otwarcia",
       "open_hours": [
@@ -189,7 +190,7 @@
         },
         {
           "type": "Email:",
-          "link": "kontakt@grubson-design.pl"
+          "link": "ruminski.lukasz@gmail.com"
         }
       ],
       "social": [
@@ -261,66 +262,48 @@
   ],
   "works": [
     {
-      "id": 0,
-      "title": "dupa1",
       "links": "../template/placeholders/portfolio/square/5.jpg",
       "height": 1,
       "type": "www_pages"
     },
     {
-      "id": 1,
-      "title": "dupa2",
       "links": "../template/placeholders/portfolio/square/1.jpg",
       "width": 1,
       "type": "www_pages"
     },
     {
-      "id": 2,
-      "title": "dupa3",
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 1,
       "type": "e_commerce"
     },
     {
-      "id": 3,
-      "title": "dupa4",
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 2,
       "height": 2,
       "type": "e_commerce"
     },
     {
-      "id": 4,
-      "title": "dupa5",
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "height": 1,
       "type": "graphics"
     },
     {
-      "id": 5,
-      "title": "dupa6",
       "links": "../template/placeholders/portfolio/square/1.jpg",
       "width": 1,
       "type": "graphics"
     },
     {
-      "id": 6,
-      "title": "dupa7",
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 1,
       "type": "graphics"
     },
     {
-      "id": 7,
-      "title": "dupa8",
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "width": 2,
       "height": 2,
       "type": "banners"
     },
     {
-      "id": 8,
-      "title": "dupa9",
       "links": "../template/placeholders/portfolio/square/2.jpg",
       "height": 1,
       "type": "banners"

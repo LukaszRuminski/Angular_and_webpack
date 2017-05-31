@@ -1,11 +1,11 @@
 /*jshint browser:true */
-"use strict";
+'use strict';
 
-require("./vendor.js")();
-var appModule = require("../index");
+require('./vendor.js')();
+var appModule = require('../index');
 
 if (MODE.production) { // jshint ignore:line
-    require("./config/production")(appModule);
+    require('./config/production')(appModule);
 }
 
 angular.element(document).ready(function(){

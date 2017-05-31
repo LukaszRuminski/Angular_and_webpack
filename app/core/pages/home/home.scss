@@ -17,7 +17,7 @@
     background: url("../../../assets/images/backgrounds/banner.svg") no-repeat scroll center bottom, linear-gradient(-45deg, #673c8e, #236295, #9869ff) repeat scroll 0 0 rgba(0, 0, 0, 0);
     background-size: cover;
     /*if ie9 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#673c8e", endColorstr="#9869ff",GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#673c8e', endColorstr='#9869ff',GradientType=1 );
     /* IE6-8 fallback on horizontal gradient */
 }
 
@@ -166,6 +166,49 @@
         }
     }
 }
+
+.about-info {
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    background: #f9f9f9;
+    border-bottom: 5px solid #f4f4f4;
+    .container > div {
+        width: 25%;
+        float: left;
+        box-sizing: border-box;
+        padding: 20px;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 80%;
+            top: 10%;
+            left: 0;
+            background: #e8e8e8;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.about-me-statics {
+    width: 100%;
+    display: block;
+    padding: 30px 0;
+    margin: 30px auto 50px;
+    border-bottom: 5px solid #F4F4F4;
+    border-top: 5px solid #F4F4F4;
+    background: url(../../../assets/placeholders/backgrounds/photography.png);
+}
+
+
 /*===========
  grubson-design
 =============*/

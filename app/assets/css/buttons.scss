@@ -1,5 +1,5 @@
 .btn, .btn-small, .btn-large, .btn-large-icon {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #fff;
   -webkit-font-smoothing: subpixel-antialiased;
   font-size: 14px;
@@ -141,9 +141,9 @@
 }
 
 .btn-default.btn-line:hover, .btn-success.btn-line:hover, .btn-warning.btn-line:hover, .btn-dark.btn-line:hover, .btn-orange.btn-line:hover, .btn-pink.btn-line:hover, .btn-primary.btn-line:hover, .btn-info.btn-line:hover, .btn-danger.btn-line:hover {
-  background: #5ea7f0;
-  border-color: #5ea7f0;
-  color: #5ea7f0;
+  background: #8D84E4;
+  border-color: #8D84E4;
+  color: #8D84E4;
 }
 
 .btn-violet.btn-line:hover {
@@ -172,7 +172,7 @@
     left: 50px;
     height: 100%;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
-    content: "";
+    content: '';
   }
 }
 

@@ -1,12 +1,12 @@
-module.exports = angular.module("app.progressBar", [])
+module.exports = angular.module('app.progressBar', [])
 
-    .directive("progressBar", function () {
+    .directive('progressBar', function () {
 
         return{
-            restrict: "C",
+            restrict: 'C',
             link: function ($scope, $element) {
                 angular.element(window).scroll(function (event) {
-                    $element.css("width", $element.attr("aria-valuetransitiongoal") + "%");
+                    $element.css('width', $element.attr('aria-valuetransitiongoal') + '%');
                 });
             }
         }

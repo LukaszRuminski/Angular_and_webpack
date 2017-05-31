@@ -10,7 +10,7 @@
  * documentation for more info on how TimeCircles can be chained.
  * 
  * After being called/created, the public TimerCircles class will then- for each element
- * within it"s collection, either fetch or create an instance of the private class.
+ * within it's collection, either fetch or create an instance of the private class.
  * Each function called upon the public class will be forwarded to each instance
  * of the private classes within the relevant element collection
  **/
@@ -65,8 +65,8 @@
     }
     
     function isCanvasSupported() {
-        var elem = document.createElement("canvas");
-        return !!(elem.getContext && elem.getContext("2d"));
+        var elem = document.createElement('canvas');
+        return !!(elem.getContext && elem.getContext('2d'));
     }
 
     /**
@@ -84,8 +84,8 @@
      * @returns {String}
      */
     function guid() {
-        return s4() + s4() + "-" + s4() + "-" + s4() + "-" +
-                s4() + "-" + s4() + s4() + s4();
+        return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+                s4() + '-' + s4() + s4() + s4();
     }
 
     /**
@@ -128,7 +128,7 @@
         var d = Date.parse(str);
         if (!isNaN(d))
             return d;
-        d = Date.parse(str.replace(/-/g, "/").replace("T", " "));
+        d = Date.parse(str.replace(/-/g, '/').replace('T', ' '));
         if (!isNaN(d))
             return d;
         // Cant find anything
@@ -197,10 +197,10 @@
     }
 
     (function() {
-        var vendors = ["webkit", "moz"];
+        var vendors = ['webkit', 'moz'];
         for (var x = 0; x < vendors.length && !window.top.requestAnimationFrame; ++x) {
-            window.top.requestAnimationFrame = window.top[vendors[x] + "RequestAnimationFrame"];
-            window.top.cancelAnimationFrame = window.top[vendors[x] + "CancelAnimationFrame"];
+            window.top.requestAnimationFrame = window.top[vendors[x] + 'RequestAnimationFrame'];
+            window.top.cancelAnimationFrame = window.top[vendors[x] + 'CancelAnimationFrame'];
         }
 
         if (!window.top.requestAnimationFrame || !window.top.cancelAnimationFrame) {
@@ -273,7 +273,7 @@
         }
 
         // Avoid stacking
-        $(this.element).children("div.time_circles").remove();
+        $(this.element).children('div.time_circles').remove();
 
         if (typeof clear_listeners === "undefined")
             clear_listeners = true;
@@ -281,7 +281,7 @@
             this.listeners = {all: [], visible: []};
         }
         this.container = $("<div>");
-        this.container.addClass("time_circles");
+        this.container.addClass('time_circles');
         this.container.appendTo(this.element);
         
         // Determine the needed width and height of TimeCircles
@@ -298,7 +298,7 @@
             width = height * this.data.drawn_units.length;
         
         // Create our canvas and set it to the appropriate size
-        var canvasElement = document.createElement("canvas");
+        var canvasElement = document.createElement('canvas');
         canvasElement.width = width;
         canvasElement.height = height;
         
@@ -308,15 +308,15 @@
         
         // Check if the browser has browser support
         var canvasSupported = isCanvasSupported();
-        // If the browser doesn"t have browser support, check if explorer canvas is loaded
-        // (A javascript library that adds canvas support to browsers that don"t have it)
+        // If the browser doesn't have browser support, check if explorer canvas is loaded
+        // (A javascript library that adds canvas support to browsers that don't have it)
         if(!canvasSupported && typeof G_vmlCanvasManager !== "undefined") {
             G_vmlCanvasManager.initElement(canvasElement);
             limited_mode = true;
             canvasSupported = true;
         }
         if(canvasSupported) {
-            this.data.attributes.context = canvasElement.getContext("2d");
+            this.data.attributes.context = canvasElement.getContext('2d');
         }
 
         this.data.attributes.item_size = Math.min(width / this.data.drawn_units.length, height);
@@ -331,7 +331,7 @@
                 continue;
 
             var textElement = $("<div>");
-            textElement.addClass("textDiv_" + key);
+            textElement.addClass('textDiv_' + key);
             textElement.css("top", Math.round(0.35 * this.data.attributes.item_size));
             textElement.css("left", Math.round(i++ * this.data.attributes.item_size));
             textElement.css("width", this.data.attributes.item_size);
@@ -357,7 +357,7 @@
 
     TC_Instance.prototype.update = function() {
         if(limited_mode) {
-            //Per unit clearing doesn"t work in IE8 using explorer canvas, so do it in one time. The downside is that radial fade cant be used
+            //Per unit clearing doesn't work in IE8 using explorer canvas, so do it in one time. The downside is that radial fade cant be used
             this.data.attributes.context.clearRect(0, 0, this.data.attributes.canvas[0].width, this.data.attributes.canvas[0].hright);
         }
         var diff, old_diff;
@@ -459,7 +459,7 @@
             this.data.animation_frame = window.top.requestAnimationFrame(update, _this.element, _this);
         }
         else {
-            // Tick animation, Don"t queue until very slightly after the next second happens
+            // Tick animation, Don't queue until very slightly after the next second happens
             var delay = (diff % 1) * 1000;
             if (delay < 0)
                 delay = 1000 + delay;
@@ -593,9 +593,9 @@
         window.top.clearTimeout(this.data.animation_frame)
 
         // Check if a date was passed in html attribute or jquery data
-        var attr_data_date = $(this.element).data("date");
+        var attr_data_date = $(this.element).data('date');
         if (typeof attr_data_date === "undefined") {
-            attr_data_date = $(this.element).attr("data-date");
+            attr_data_date = $(this.element).attr('data-date');
         }
         if (typeof attr_data_date === "string") {
             this.data.attributes.ref_date = parse_date(attr_data_date);
@@ -608,9 +608,9 @@
         }
         else {
             // Try to get data-timer
-            var attr_data_timer = $(this.element).data("timer");
+            var attr_data_timer = $(this.element).data('timer');
             if (typeof attr_data_timer === "undefined") {
-                attr_data_timer = $(this.element).attr("data-timer");
+                attr_data_timer = $(this.element).attr('data-timer');
             }
             if (typeof attr_data_timer === "string") {
                 attr_data_timer = parseFloat(attr_data_timer);
@@ -648,8 +648,8 @@
     TC_Instance.prototype.destroy = function() {
         this.stop();
         this.container.remove();
-        $(this.element).removeAttr("data-tc-id");
-        $(this.element).removeData("tc-id");
+        $(this.element).removeAttr('data-tc-id');
+        $(this.element).removeData('tc-id');
     };
 
     TC_Instance.prototype.setOptions = function(options) {
@@ -675,7 +675,7 @@
                 }
             }
             else {
-                // If it"s a string, but neither of the above, user screwed up.
+                // If it's a string, but neither of the above, user screwed up.
                 this.data.total_duration = secondsIn["Years"];
                 console.error("Valid values for TimeCircles config.total_duration are either numeric, or (string) Years, Months, Days, Hours, Minutes, Auto");
             }
@@ -750,7 +750,7 @@
         }
         if (typeof TC_Instance_List[cur_id] === "undefined") {
             var options = this.options;
-            var element_options = $(element).data("options");
+            var element_options = $(element).data('options');
             if (typeof element_options === "string") {
                 element_options = JSON.parse(element_options);
             }

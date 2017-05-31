@@ -1,11 +1,11 @@
-module.exports = angular.module("app.scrollReveal", [])
+module.exports = angular.module('app.scrollReveal', [])
 
-    .directive("scrollShow", function () {
+    .directive('scrollShow', function () {
 
         return{
-            restrict: "C",
+            restrict: 'C',
             link: function ($scope, $element) {
-                $scope.$on("$viewContentLoaded", function() {
+                $scope.$on('$viewContentLoaded', function() {
                     $element.scrollReveal = new scrollReveal({
                         reset: true
                     });
@@ -20,12 +20,12 @@ module.exports = angular.module("app.scrollReveal", [])
 
                     var transitionEnd = (function () {
                         var t;
-                        var el = document.createElement("fakeelement");
+                        var el = document.createElement('fakeelement');
                         var transitions = {
-                            "transition": "transitionend",
-                            "OTransition": "oTransitionEnd",
-                            "MozTransition": "transitionend",
-                            "WebkitTransition": "webkitTransitionEnd"
+                            'transition': 'transitionend',
+                            'OTransition': 'oTransitionEnd',
+                            'MozTransition': 'transitionend',
+                            'WebkitTransition': 'webkitTransitionEnd'
                         }
 
                         for (t in transitions) {
