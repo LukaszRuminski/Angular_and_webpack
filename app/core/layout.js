@@ -1,6 +1,6 @@
 "use strict";
 module.exports = angular.module("app.layout", ["ui.router", "ngDialog", "ngMap"])
-    .run(["$rootScope", "$state", "$stateParams", "$timeout",  function ($rootScope, $sta-te, $stateParams, $timeout){
+    .run(["$rootScope", "$state", "$stateParams", "$timeout",  function ($rootScope, $state, $stateParams, $timeout) {
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
         $rootScope.$timeout = $timeout;
