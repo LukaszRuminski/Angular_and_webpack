@@ -52,7 +52,7 @@
                     <p ng-repeat="open_hours in contact.app.texts.contact.open_hours"><strong>{{::open_hours.day}}</strong>&nbsp;{{::open_hours.hours}}</p>                </div>
                 <div class="text-block">
                     <div class="text-heading line"> <h3><i class="fa fa-info-circle"></i>&nbsp;{{::contact.app.texts.contact.contact_info_title}}</h3> </div>
-                    <p ng-repeat="contact_info in contact.app.texts.contact.contact_info">	<strong>{{::contact_info.type}}</strong><a ng-if="contact_info.type == 'Email:'" href='mailto:"{{::contact_info.link}}"'>&nbsp;{{::contact_info.link}}</a>&nbsp;{{::contact_info.value}}</p>
+                    <p ng-repeat="contact_info in contact.app.texts.contact.contact_info">	<strong>{{::contact_info.type}}</strong><a ng-if="contact_info.type == "Email:"" href="mailto:"{{::contact_info.link}}"">&nbsp;{{::contact_info.link}}</a>&nbsp;{{::contact_info.value}}</p>
                 </div>
 
                 <div class="socials circle-icon border-group">

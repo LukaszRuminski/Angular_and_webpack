@@ -1,8 +1,8 @@
 /* jshint ignore:start */
 (function(root, factory) {
-  if (typeof define === 'function' && define.amd) {
+  if (typeof define === "function" && define.amd) {
     define(factory);
-  } else if (typeof exports === 'object') {
+  } else if (typeof exports === "object") {
     module.exports = factory(require, exports, module);
   } else {
     root.scrollReveal = factory();
@@ -13,7 +13,7 @@
                        _ _ _____                      _   _
                       | | |  __ \                    | | (_)
     ___  ___ _ __ ___ | | | |__) |_____   _____  __ _| |  _ ___
-   / __|/ __| '__/ _ \| | |  _  // _ \ \ / / _ \/ _` | | | / __|
+   / __|/ __| "__/ _ \| | |  _  // _ \ \ / / _ \/ _` | | | / __|
    \__ \ (__| | | (_) | | | | \ \  __/\ V /  __/ (_| | |_| \__ \
    |___/\___|_|  \___/|_|_|_|  \_\___| \_/ \___|\__,_|_(_) |___/ v.0.1.2
                                                         _/ |
@@ -37,7 +37,7 @@
 
 window.scrollReveal = (function (window) {
 
-  'use strict';
+  "use strict";
 
   function scrollReveal(options) {
 
@@ -51,14 +51,14 @@ window.scrollReveal = (function (window) {
   scrollReveal.prototype = {
 
     defaults: {
-      after:  '0s',
-      enter:  'bottom',
-      move:   '24px',
-      over:   '0.66s',
-      easing: 'ease-in-out',
+      after:  "0s",
+      enter:  "bottom",
+      move:   "24px",
+      over:   "0.66s",
+      easing: "ease-in-out",
 
   //  if 0, the element is considered in the viewport as soon as it enters
-  //  if 1, the element is considered in the viewport when it's fully visible
+  //  if 1, the element is considered in the viewport when it"s fully visible
       viewportFactor: 0.33,
 
   // if false, animations occur only once
@@ -79,12 +79,12 @@ window.scrollReveal = (function (window) {
 
   //  Check DOM for the data-scrollReveal attribute
   //  and initialize all found elements.
-      this.elems = Array.prototype.slice.call(this.docElem.querySelectorAll('[data-scroll-reveal]'));
+      this.elems = Array.prototype.slice.call(this.docElem.querySelectorAll("[data-scroll-reveal]"));
       this.elems.forEach(function (el, i) {
 
     //  Capture original style attribute
         if (!self.styleBank[el]) {
-          self.styleBank[el] = el.getAttribute('style');
+          self.styleBank[el] = el.getAttribute("style");
         }
 
         self.update(el);
@@ -112,8 +112,8 @@ window.scrollReveal = (function (window) {
         self.resizeTimeout = setTimeout(delayed, 200);
       };
 
-      window.addEventListener('scroll', scrollHandler, false);
-      window.addEventListener('resize', resizeHandler, false);
+      window.addEventListener("scroll", scrollHandler, false);
+      window.addEventListener("resize", resizeHandler, false);
     },
 
     /*=============================================================================*/
@@ -132,7 +132,7 @@ window.scrollReveal = (function (window) {
     parseLanguage: function (el) {
 
   //  Splits on a sequence of one or more commas or spaces.
-      var words = el.getAttribute('data-scroll-reveal').split(/[, ]+/),
+      var words = el.getAttribute("data-scroll-reveal").split(/[, ]+/),
           parsed = {};
 
       function filter (words) {
@@ -220,32 +220,32 @@ window.scrollReveal = (function (window) {
 
       if (style != null) style += ";"; else style = "";
 
-      if (!el.getAttribute('data-scroll-reveal-initialized')) {
-        el.setAttribute('style', style + css.initial);
-        el.setAttribute('data-scroll-reveal-initialized', true);
+      if (!el.getAttribute("data-scroll-reveal-initialized")) {
+        el.setAttribute("style", style + css.initial);
+        el.setAttribute("data-scroll-reveal-initialized", true);
       }
 
       if (!this.isElementInViewport(el, this.options.viewportFactor)) {
         if (this.options.reset) {
-          el.setAttribute('style', style + css.initial + css.reset);
+          el.setAttribute("style", style + css.initial + css.reset);
         }
         return;
       }
 
-      if (el.getAttribute('data-scroll-reveal-complete')) return;
+      if (el.getAttribute("data-scroll-reveal-complete")) return;
 
       if (this.isElementInViewport(el, this.options.viewportFactor)) {
-        el.setAttribute('style', style + css.target + css.transition);
+        el.setAttribute("style", style + css.target + css.transition);
     //  Without reset enabled, we can safely remove the style tag
     //  to prevent CSS specificy wars with authored CSS.
         if (!this.options.reset) {
           setTimeout(function () {
             if (style != "") {
-              el.setAttribute('style', style);
+              el.setAttribute("style", style);
             } else {
-              el.removeAttribute('style');
+              el.removeAttribute("style");
             }
-            el.setAttribute('data-scroll-reveal-complete',true);
+            el.setAttribute("data-scroll-reveal-complete",true);
           }, css.totalDuration);
         }
       return;
@@ -287,7 +287,7 @@ window.scrollReveal = (function (window) {
   //  After all values are parsed, let’s make sure our our
   //  pixel distance is negative for top and left entrances.
   //
-  //  ie. "move 25px from top" starts at 'top: -25px' in CSS.
+  //  ie. "move 25px from top" starts at "top: -25px" in CSS.
 
       if (enter == "top" || enter == "left") {
         if (parsed.move) {
@@ -331,8 +331,8 @@ window.scrollReveal = (function (window) {
     },
 
     getViewportH : function () {
-      var client = this.docElem['clientHeight'],
-        inner = window['innerHeight'];
+      var client = this.docElem["clientHeight"],
+        inner = window["innerHeight"];
 
       return (client < inner) ? inner : client;
     },
@@ -366,7 +366,7 @@ window.scrollReveal = (function (window) {
 
       return (elTop + elH * h) <= viewed
           && (elBottom) >= scrolled
-          || (el.currentStyle? el.currentStyle : window.getComputedStyle(el, null)).position == 'fixed';
+          || (el.currentStyle? el.currentStyle : window.getComputedStyle(el, null)).position == "fixed";
     },
 
     extend: function (a, b){

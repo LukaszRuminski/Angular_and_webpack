@@ -36,7 +36,7 @@ header .main-menu > li > a {
 	color:#7d7d7d;
 	}
 .main-menu li a {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	color: #3d3d3d;
 	font-size: 13px;
 	font-weight: 300;
@@ -46,13 +46,13 @@ header .main-menu > li > a {
 	line-height:14px;
 }
 .main-menu li ul a::before, .main-menu li ul a::before {
-	content: '';
+	content: "";
 }
 .main-menu > li > a::before {
 	position: absolute;
 	top: 50px;
 	left: 10px;
-	content: '';
+	content: "";
 	background:#5ea7f0;
 	height:2px;
 	width:0px;
@@ -175,7 +175,7 @@ header .main-menu > li > a {
 	position:absolute;
 	top:44px;
 	left:0;
-	content:'';
+	content:"";
 	height:1px;
 	width:0;
 	background:#5ea7f0;
@@ -222,7 +222,7 @@ header .main-menu > li > a {
 }
 .main-menu li.mega-menu div {
 	font-weight: 300;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 .main-menu li.mega-menu .inner {
 	width: 100%;
@@ -252,13 +252,13 @@ header .main-menu > li > a {
     letter-spacing: 2px;
     position: relative;
 	text-transform:uppercase;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: "Roboto Condensed", sans-serif;
 	margin-bottom:20px;
 	position:relative;
 	}
 .main-menu li.mega-menu .inner > div h3:after {
 	position:absolute;
-	content:'';
+	content:"";
 	background:#5ea7f0;
 	width:40px;
 	height:1px;
@@ -267,7 +267,7 @@ header .main-menu > li > a {
 	}
 .main-menu li.mega-menu .inner > div h3:before {
 	position:absolute;
-	content:'';
+	content:"";
 	background:rgba(0, 0, 0, .1);
 	width:100%;
 	height:1px;
@@ -349,7 +349,7 @@ input::-webkit-input-placeholder {
 	border-radius:0;
 }
 #search-form:after {
-	content:'\f002';
+	content:"\f002";
 	position:absolute;
 	top:23px;
 	font-size:14px;
@@ -1322,7 +1322,7 @@ All this is done for any sub-level being entered.
 }
 
 .no-js .dl-menuwrapper li > a:not(:only-child):after {
-	content: '';
+	content: "";
 }
 
 

@@ -1,11 +1,11 @@
-module.exports = angular.module('app.dlMenu', [])
+module.exports = angular.module("app.dlMenu", [])
 
-.directive('dlMenuwrapper', function () {
+.directive("dlMenuwrapper", function () {
 
     return{
-        restrict: 'C',
+        restrict: "C",
         link: function ($scope, $element) {
-            // $scope.$on('$viewContentLoaded', function () {
+            // $scope.$on("$viewContentLoaded", function () {
                 $element.dlmenu();
             // })
         }

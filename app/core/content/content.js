@@ -1,11 +1,11 @@
 function ContentCtrl () {
-    this.app = require('index.json');
+    this.app = require("index.json");
 }
 module.exports = function() {
-    require('./content.scss');
+    require("./content.scss");
     return {
         controller: ContentCtrl,
-        controllerAs: 'content',
-        template: require('./content.html')
+        controllerAs: "content",
+        template: require("./content.html")
     };
 };
